@@ -2,7 +2,7 @@
 Java project using OOP (Object Oriented Programming)
 
 <p>
-<strong>Integrantes: </strong> <br>
+<strong>Members: </strong> <br>
     <ul>
         <li>Alan Silva dos Santos</li>
         <li>Arthur Solla Gregorut Favero</li>
