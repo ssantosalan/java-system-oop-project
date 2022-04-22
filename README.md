@@ -12,3 +12,6 @@ Java project using OOP (Object Oriented Programming)
         <li>Rafaela Eduarda Teixeira Silva</li>
     </ul>
 </p>
+
+
+<strong>Java SE Development Kit:   </strong>  17.0.3<br>
