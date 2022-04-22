@@ -5,96 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe512cb3-23f6-43cb-a2c6-34f1ae3634da" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/java-system-oop-project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_openjfx_javafx_base_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_openjfx_javafx_base_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_openjfx_javafx_controls_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_openjfx_javafx_controls_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_openjfx_javafx_fxml_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_openjfx_javafx_graphics_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/FXTeste.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_openjfx_javafx_base_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_openjfx_javafx_base_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_openjfx_javafx_controls_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_openjfx_javafx_controls_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_openjfx_javafx_fxml_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_openjfx_javafx_graphics_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/FXTeste.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/src/main/java/com/example/fxteste/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/src/main/java/com/example/fxteste/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/bin/src/main/resources/com/example/fxteste/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/src/main/java/com/example/fxteste/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/src/main/java/com/example/fxteste/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/src/main/resources/com/example/fxteste/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/target/classes/com/example/fxteste/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/target/classes/com/example/fxteste/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/target/classes/com/example/fxteste/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFX/target/classes/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-system-oop-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-system-oop-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +25,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Faculdade/Documents/Projeto/javafx-sdk-18/lib",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30689654"
+  }
+}]]></component>
   <component name="RunManager">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.example.javasystemoopproject.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.javasystemoopproject.HelloApplication" />
       <module name="java-system-oop-project" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Faculdade\Documents\Projeto\javafx-sdk-18\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.javasystemoopproject.*" />
@@ -132,7 +52,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.com.example.javasystemoopproject.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -146,5 +66,10 @@
       <updated>1650650561055</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_system_oop_project$com_example_javasystemoopproject_HelloApplication.ic" NAME="com.example.javasystemoopproject.HelloApplication Coverage Results" MODIFIED="1650656007019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.javasystemoopproject.*</FILTER>
+    </SUITE>
   </component>
 </project>
