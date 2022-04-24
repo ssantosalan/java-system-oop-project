@@ -204,6 +204,7 @@ pom.xml.releaseBackup
 pom.xml.tag
 
 .vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
