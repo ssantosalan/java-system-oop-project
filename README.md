@@ -14,4 +14,15 @@ Java project using OOP (Object Oriented Programming)
 </p>
 
 
+
+If you are using Eclipse, IntellI or Netbeans:
+
+    --module-path "PATH" --add-modules javafx.controls,javafx.fxml
+    
+If you are using vscode:
+
+    "vmArgs": "--module-path \"PATH\" --add-modules javafx.controls,javafx.fxml"
+
+
+
 <strong>Java SE Development Kit:   </strong>  17.0.3<br>
