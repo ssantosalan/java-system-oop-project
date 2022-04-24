@@ -203,8 +203,9 @@ release.properties
 pom.xml.releaseBackup
 pom.xml.tag
 
-.vscode/*
-.vscode/
+### VisualStudioCode ###
+# .vscode/* Maybe .vscode/**/* instead - see comments (exclude .vscode in any folder)
+.vscode/**/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
