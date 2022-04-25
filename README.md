@@ -14,6 +14,16 @@ Java project using OOP (Object Oriented Programming)
     </ul>
 </p>
 
+## What are we using in this project?
+- Java
+- Object-oriented Programming (OOP)
+- JavaFX
+- Use Case Diagram
+- Class diagram
+- Git/Github
+- Wireframes
+- MySQL
+
 ## What will you need?
 
 <strong>Java SE Development Kit:   </strong>  17.0.3<br>
