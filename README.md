@@ -2,14 +2,15 @@
 
 Java project using OOP (Object Oriented Programming)
 
+## Members:
+
 <p>
-<strong>Members: </strong> <br>
     <ul>
-        <li>Alan Silva dos Santos</li>
-        <li>Arthur Solla Gregorut Favero</li>
-        <li>Guilherme Alves Martins</li>
-        <li>Jorge luiz dos Santos Oliveira</li>
-        <li>Rafaela Eduarda Teixeira Silva</li>
+        <li>👽 Alan Silva dos Santos</li>
+        <li>👽 Arthur Solla Gregorut Favero</li>
+        <li>👽 Guilherme Alves Martins</li>
+        <li>👽 Jorge luiz dos Santos Oliveira</li>
+        <li>👽 Rafaela Eduarda Teixeira Silva</li>
     </ul>
 </p>
 
