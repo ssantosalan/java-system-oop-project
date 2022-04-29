@@ -37,14 +37,6 @@ create table pedido_de_venda(
 alter table pedido_de_venda add foreign key(FK_id_cliente) references cliente(id_cliente);
 alter table pedido_de_venda add foreign key(FK_id_produto) references estoque(id_produto);
 
-
-
-insert into usuario(nome_usuario,email,senha,acesso)values(
-	'Vinicius Gava Pereira',
-	'vini-gava@outlook.com.br',	
-	'vini123',
-    'Gerente'
-);
 insert into usuario(nome_usuario,email,senha,acesso)values(
 	'Rafaela Teixeira',
 	'rafaela-teia@outlook.com.br',	
