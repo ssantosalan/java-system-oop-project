@@ -1,5 +1,5 @@
-create database projetointegrador;
-use projetointegrador;
+create database projetointegrador_terceiro;
+use projetointegrador_terceiro;
 
 create table usuario(
 	id_usuario int(3) primary key auto_increment not null,
