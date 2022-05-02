@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.SceneController">
@@ -15,9 +16,12 @@
          <top>
             <HBox prefHeight="52.0" prefWidth="893.0" style="-fx-background-color: #0478ED;" BorderPane.alignment="CENTER" />
          </top>
-         <center>
-            <Button mnemonicParsing="false" onAction="#trocarParaTelaVendedor" text="Trocar para tela vendedor" BorderPane.alignment="TOP_LEFT" />
-         </center>
       </BorderPane>
+      <Pane layoutX="60.0" layoutY="52.0" prefHeight="668.0" prefWidth="1220.0">
+         <children>
+            <Button layoutX="356.0" layoutY="45.0" mnemonicParsing="false" text="Não leia" />
+            <Button mnemonicParsing="false" onAction="#trocarParaTelaVendedor" text="Trocar para tela vendedor" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
