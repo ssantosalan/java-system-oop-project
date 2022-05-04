@@ -2,6 +2,17 @@ package pessoas;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Random;
+
+
 public class Vendedor extends Pessoa {
     private int idVendedor;
     private String nomeVendedor;
@@ -18,6 +29,18 @@ public class Vendedor extends Pessoa {
         this.emailVendedor = emailVendedor;
         this.senhaVendedor = senhaVendedor;
         this.salarioVendedor = salarioVendedor;
+    }
+
+    public void cadastrarVendedor() {
+
+    }
+
+    public void excluirVendedor(){
+
+    }
+
+    public void pesquisarVendedor() {
+
     }
 
     public int getIdVendedor() {
