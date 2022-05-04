@@ -21,20 +21,20 @@
       </BorderPane>
       <Pane layoutX="70.0" layoutY="62.0" prefHeight="668.0" prefWidth="1220.0">
          <children>
-            <TextField layoutX="315.0" layoutY="41.0" prefHeight="25.0" prefWidth="211.0" />
-            <TextField layoutX="622.0" layoutY="41.0" />
-            <TextField layoutX="315.0" layoutY="102.0" prefHeight="25.0" prefWidth="211.0" />
-            <TextField layoutX="622.0" layoutY="102.0" />
-            <TextField layoutX="315.0" layoutY="166.0" prefHeight="25.0" prefWidth="211.0" />
-            <TextField layoutX="315.0" layoutY="229.0" prefHeight="25.0" prefWidth="211.0" />
+            <TextField layoutX="315.0" layoutY="41.0" prefHeight="25.0" prefWidth="211.0" promptText="Nome do vendedor" />
+            <TextField layoutX="622.0" layoutY="41.0" promptText="CPF" />
+            <TextField layoutX="315.0" layoutY="102.0" prefHeight="25.0" prefWidth="211.0" promptText="Email" />
+            <TextField layoutX="622.0" layoutY="102.0" promptText="Sexo" />
+            <TextField layoutX="315.0" layoutY="166.0" prefHeight="25.0" prefWidth="211.0" promptText="Telefone" />
+            <TextField layoutX="315.0" layoutY="229.0" prefHeight="25.0" prefWidth="211.0" promptText="Data de nascimento" />
             <TextField layoutX="315.0" layoutY="302.0" prefHeight="25.0" prefWidth="211.0" />
-            <TextField layoutX="315.0" layoutY="405.0" prefHeight="25.0" prefWidth="456.0" />
-            <TextField layoutX="315.0" layoutY="468.0" prefHeight="25.0" prefWidth="211.0" />
-            <TextField layoutX="560.0" layoutY="468.0" prefHeight="25.0" prefWidth="211.0" />
+            <TextField layoutX="315.0" layoutY="405.0" prefHeight="25.0" prefWidth="456.0" promptText="Email" />
+            <TextField layoutX="315.0" layoutY="468.0" prefHeight="25.0" prefWidth="211.0" promptText="Senha" />
+            <TextField layoutX="560.0" layoutY="468.0" prefHeight="25.0" prefWidth="211.0" promptText="Repetir a senha" />
             <Label layoutX="195.0" layoutY="33.0" text="Dados básicos" />
             <Label layoutX="189.0" layoutY="397.0" text="Dados de acesso" />
             <Label layoutX="14.0" layoutY="6.0" text="Cadastro de vendedor" textFill="#0478ed" />
-            <Button layoutX="666.0" layoutY="525.0" mnemonicParsing="false" text="Cadastrar cliente" />
+            <Button layoutX="666.0" layoutY="525.0" mnemonicParsing="false" text="Cadastrar cliente" textFill="#0478ed" />
          </children>
       </Pane>
    </children>
