@@ -1,6 +1,8 @@
 package pessoas;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,8 +22,6 @@ public class Vendedor extends Pessoa {
     private String senhaVendedor;
     private double salarioVendedor;
 
-    @FXML
-    private Button botaoVendedor;
 
     public Vendedor(int idVendedor, String nomeVendedor, String emailVendedor, String senhaVendedor, double salarioVendedor) {
         this.idVendedor = idVendedor;
@@ -31,8 +31,9 @@ public class Vendedor extends Pessoa {
         this.salarioVendedor = salarioVendedor;
     }
 
-    public void cadastrarVendedor() {
-
+    @FXML
+    void cadastrarVendedor(ActionEvent event) {
+//
     }
 
     public void excluirVendedor(){

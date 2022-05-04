@@ -2,7 +2,9 @@ package com.example.fxproject;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -16,6 +18,7 @@ public class Controller {
     protected void onHelloButtonClick() {
         welcomeText.setText("WELCOME, DEVELOPER! IT'S A NEW ERA!");
     }
+
 
     @FXML
     private Label showUsernameLabel;
