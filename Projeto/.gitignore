@@ -216,3 +216,6 @@ pom.xml.tag
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Database Connection
+MyDatabaseConnection.java
