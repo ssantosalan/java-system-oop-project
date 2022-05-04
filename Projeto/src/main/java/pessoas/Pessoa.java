@@ -5,6 +5,8 @@ public class Pessoa {
     private String emailPessoa;
     private int id;
 
+    public Pessoa() {}
+
     public Pessoa(String senhaPessoa, String emailPessoa, int id) {
         this.senhaPessoa = senhaPessoa;
         this.emailPessoa = emailPessoa;
