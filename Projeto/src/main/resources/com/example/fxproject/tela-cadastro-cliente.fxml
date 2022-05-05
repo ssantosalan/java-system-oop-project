@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.SceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pessoas.Cliente">
    <children>
       <BorderPane prefHeight="720.0" prefWidth="1280.0">
          <left>
@@ -16,13 +18,19 @@
          <top>
             <HBox prefHeight="52.0" prefWidth="893.0" style="-fx-background-color: #0478ED;" BorderPane.alignment="CENTER" />
          </top>
-         <center>
-            <Button mnemonicParsing="false" onAction="#trocarParaTelaVendedor" text="Trocar para tela vendedor" BorderPane.alignment="TOP_LEFT" />
-         </center>
       </BorderPane>
       <Pane layoutX="70.0" layoutY="62.0" prefHeight="668.0" prefWidth="1220.0">
          <children>
-            <Button layoutX="356.0" layoutY="45.0" mnemonicParsing="false" text="Não leia" />
+            <TextField fx:id="textoNomeCliente" layoutX="315.0" layoutY="35.0" prefHeight="25.0" prefWidth="211.0" promptText="Nome do cliente" />
+            <TextField fx:id="textoCPFCliente" layoutX="622.0" layoutY="35.0" promptText="CPF" />
+            <TextField layoutX="622.0" layoutY="96.0" promptText="Sexo" />
+            <TextField fx:id="textoTelefoneCliente" layoutX="315.0" layoutY="96.0" prefHeight="25.0" prefWidth="211.0" promptText="Telefone" />
+            <TextField layoutX="315.0" layoutY="153.0" prefHeight="25.0" prefWidth="211.0" promptText="Data de nascimento" />
+            <TextField fx:id="textoCodigoCliente" layoutX="315.0" layoutY="227.0" prefHeight="25.0" prefWidth="211.0" />
+            <TextField fx:id="textoEmailCliente" layoutX="315.0" layoutY="284.0" prefHeight="25.0" prefWidth="456.0" promptText="Email" />
+            <Label layoutX="195.0" layoutY="27.0" text="Dados básicos" />
+            <Label layoutX="14.0" text="Cadastro de cliente" textFill="#0478ed" />
+            <Button fx:id="botaoAdicionarCliente" layoutX="666.0" layoutY="357.0" mnemonicParsing="false" onAction="#cadastrarCliente" text="Cadastrar cliente" textFill="#0478ed" />
          </children>
       </Pane>
    </children>

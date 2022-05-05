@@ -16,14 +16,23 @@ public class SceneController {
 
     public void trocarParaTelaMain(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("main.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
+    public void trocarParaTelaCliente(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-cadastro-cliente.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public void trocarParaTelaVendedor(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("tela-cadastro-vendedor.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

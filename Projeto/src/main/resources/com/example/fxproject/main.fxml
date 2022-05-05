@@ -21,6 +21,7 @@
          <children>
             <Button layoutX="356.0" layoutY="45.0" mnemonicParsing="false" text="Não leia" />
             <Button mnemonicParsing="false" onAction="#trocarParaTelaVendedor" text="Trocar para tela vendedor" />
+            <Button layoutY="45.0" mnemonicParsing="false" onAction="#trocarParaTelaCliente" text="Trocar para tela cliente" />
          </children>
       </Pane>
    </children>

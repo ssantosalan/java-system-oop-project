@@ -1,86 +1,115 @@
 package pessoas;
+
+import com.example.fxproject.MyDatabaseConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Random;
+import java.io.IOException;
+import java.sql.*;
 
 
-public class Vendedor extends Pessoa {
-    private int idVendedor;
-    private String nomeVendedor;
-    private String emailVendedor;
-    private String senhaVendedor;
-    private double salarioVendedor;
+public class Vendedor {
 
+    public Connection con;
+    public Statement st;
+    public ResultSet resultado = null;
+    public ResultSet resultado2 = null;
 
-    public Vendedor(int idVendedor, String nomeVendedor, String emailVendedor, String senhaVendedor, double salarioVendedor) {
-        this.idVendedor = idVendedor;
-        this.nomeVendedor = nomeVendedor;
-        this.emailVendedor = emailVendedor;
-        this.senhaVendedor = senhaVendedor;
-        this.salarioVendedor = salarioVendedor;
+    Connection conexao = null;
+    PreparedStatement pst = null;
+    ResultSet rs = null;
+
+    public Vendedor() {
+//        initComponents();
+        this.setLocationRelativeTo(null);
+        try {
+            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
+            st = (Statement) conexao.createStatement();
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
+            st = (Statement) con.createStatement();
+//            JOptionPane.showMessageDialog(null, "Conectado!");
+            System.out.println("CONECTOU");
+        } catch (Exception e) {
+//            JOptionPane.showMessageDialog(null, "Não Conectado!");
+            System.out.println("NÂO CONECTOU");
+
+        }
     }
+
+    private void setLocationRelativeTo(Object o) {
+    }
+
 
     @FXML
-    void cadastrarVendedor(ActionEvent event) {
-//
+    private TextField textoNomeVendedor;
+
+    @FXML
+    private TextField textoCodigoVendedor;
+
+    @FXML
+    private TextField textoEmailVendedor;
+
+    @FXML
+    private TextField textoSenhaVendedor;
+
+    @FXML
+    private TextField textoConfirmarSenhaVendedor;
+
+    @FXML
+    private Button botaoAdicionarVendedor;
+
+//    VendedorController vendedorController = new VendedorController();
+//    public Statement st = vendedorController.st;
+
+    @FXML
+    public void cadastrarVendedor(ActionEvent event) throws IOException {
+//        String codigo, nome, email, senha, confirmarSenha;
+
+        String codigo = textoCodigoVendedor.getText();
+        String nome = textoNomeVendedor.getText();
+        String email = textoEmailVendedor.getText();
+        String senha = textoSenhaVendedor.getText();
+        String confirmarSenha = textoConfirmarSenhaVendedor.getText();
+
+//        String acesso = "";
+//        if (botaoAcessoGerenteVendedor.isSelected()) {
+//            acesso = "Gerente";
+//        } else if (botaoAcessoColaboradorVendedor.isSelected()) {
+//            acesso = "Colaborador";
+//        }
+        String acesso = "Gerente";
+
+        try {
+
+            if (codigo.equals("") && !nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
+                if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
+                    String minhasql = "insert into usuario (nome_usuario, email, senha, acesso) values ('"
+                            + nome + "','" + email + "','" + senha + "','" + acesso + "');";
+                    st.executeUpdate(minhasql);
+//                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
+                } else {
+//                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
+                }
+
+            } else if (!codigo.equals("") && !nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
+                if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
+                    String minhasql = "insert into usuario (id_usuario, nome_usuario, email, senha, acesso) values ('"
+                            + codigo + "','" + nome + "','" + email + "','" + senha + "','" + acesso + "')";
+                    st.executeUpdate(minhasql);
+//                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
+                } else {
+//                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
+                }
+
+            } else {
+//                JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
+            }
+
+        } catch (Exception e) {
+//            JOptionPane.showMessageDialog(null, "Não gravado!");
+        }
     }
 
-    public void excluirVendedor(){
-
-    }
-
-    public void pesquisarVendedor() {
-
-    }
-
-    public int getIdVendedor() {
-        return idVendedor;
-    }
-
-    public void setIdVendedor(int idVendedor) {
-        this.idVendedor = idVendedor;
-    }
-
-    public String getNomeVendedor() {
-        return nomeVendedor;
-    }
-
-    public void setNomeVendedor(String nomeVendedor) {
-        this.nomeVendedor = nomeVendedor;
-    }
-
-    public String getEmailVendedor() {
-        return emailVendedor;
-    }
-
-    public void setEmailVendedor(String emailVendedor) {
-        this.emailVendedor = emailVendedor;
-    }
-
-    public String getSenhaVendedor() {
-        return senhaVendedor;
-    }
-
-    public void setSenhaVendedor(String senhaVendedor) {
-        this.senhaVendedor = senhaVendedor;
-    }
-
-    public double getSalarioVendedor() {
-        return salarioVendedor;
-    }
-
-    public void setSalarioVendedor(double salarioVendedor) {
-        this.salarioVendedor = salarioVendedor;
-    }
 }
