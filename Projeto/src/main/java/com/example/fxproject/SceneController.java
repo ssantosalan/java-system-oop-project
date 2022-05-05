@@ -38,5 +38,37 @@ public class SceneController {
         stage.show();
     }
 
+    public void trocarParaTelaProduto(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-cadastro-produto.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaRelatorioAnalitico(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-relatorio-analitico.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaRelatorioSintetico(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-relatorio-sintetico.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaVenda(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-venda.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 }

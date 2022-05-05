@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -11,18 +13,52 @@
    <children>
       <BorderPane prefHeight="720.0" prefWidth="1280.0">
          <left>
-            <VBox prefHeight="668.0" prefWidth="62.0" style="-fx-border-color: #B3B3B3;" BorderPane.alignment="CENTER" />
+            <VBox prefHeight="668.0" prefWidth="62.0" style="-fx-border-color: #B3B3B3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="30.0" prefWidth="77.0" text="home">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaVendedor" prefHeight="30.0" prefWidth="77.0" text="vendedor">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaCliente" prefHeight="30.0" text="cliente">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaVenda" prefHeight="30.0" text="venda">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaProduto" prefHeight="30.0" text="produto">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaRelatorioSintetico" prefHeight="30.0" text="sintético">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaRelatorioAnalitico" prefHeight="30.0" text="analítico">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+               </children></VBox>
          </left>
          <top>
             <HBox prefHeight="52.0" prefWidth="893.0" style="-fx-background-color: #0478ED;" BorderPane.alignment="CENTER" />
          </top>
-         <center>
-            <Button mnemonicParsing="false" onAction="#trocarParaTelaVendedor" text="Trocar para tela vendedor" BorderPane.alignment="TOP_LEFT" />
-         </center>
       </BorderPane>
       <Pane layoutX="70.0" layoutY="62.0" prefHeight="668.0" prefWidth="1220.0">
          <children>
-            <Button layoutX="356.0" layoutY="45.0" mnemonicParsing="false" text="Não leia" />
+            <Label layoutX="78.0" layoutY="50.0" text="venda" />
          </children>
       </Pane>
    </children>
