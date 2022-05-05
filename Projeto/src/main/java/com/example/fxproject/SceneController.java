@@ -91,4 +91,9 @@ public class SceneController {
     @FXML
     private Button botaoAdicionarCliente;
 
+    @FXML
+    void botaoGerarRelatorio2(ActionEvent event) { // DEPOIS RETIRA ISSO. FEITO SOMENTE PARA VISUALIZAR AO CLICAR NO DASHBOARD
+
+    }
+
 }
