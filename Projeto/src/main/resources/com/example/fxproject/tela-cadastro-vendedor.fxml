@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.SceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.Vendedor">
    <children>
       <BorderPane prefHeight="720.0" prefWidth="1280.0">
          <left>
@@ -71,7 +71,7 @@
             <Label layoutX="195.0" layoutY="33.0" text="Dados básicos" />
             <Label layoutX="189.0" layoutY="397.0" text="Dados de acesso" />
             <Label layoutX="14.0" layoutY="6.0" text="Cadastro de vendedor" textFill="#0478ed" />
-            <Button fx:id="botaoAdicionarVendedor" layoutX="666.0" layoutY="525.0" mnemonicParsing="false" onAction="#cadastrarVendedor" text="Cadastrar cliente" textFill="#0478ed" />
+            <Button fx:id="botaoAdicionarVendedor" layoutX="666.0" layoutY="525.0" mnemonicParsing="false" onAction="#cadastrarVendedor" text="Cadastrar vendedor" textFill="#0478ed" />
          </children>
       </Pane>
    </children>

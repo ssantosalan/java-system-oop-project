@@ -1,9 +1,15 @@
-package pessoas;
+package com.example.fxproject;
 
+import com.example.fxproject.SceneController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
@@ -55,6 +61,7 @@ public class Cliente {
     @FXML
     private Button botaoAdicionarCliente;
 
+
     @FXML
     public void cadastrarCliente(ActionEvent event) throws IOException {
         String codigo = textoCodigoCliente.getText();
@@ -68,6 +75,7 @@ public class Cliente {
             if (codigo.equals("") && !nome.equals("") && !cpf.equals("")) {
                 String minhaSQL = "insert into cliente(nome,cpf,telefone,email) values('" + nome + "','" + cpf + "','" + telefone + "','" + email + "');";
 //                JOptionPane.showMessageDialog(null, "Registro gravado");
+                System.out.println("Gravou");
                 st.executeUpdate(minhaSQL);
             } else if (!codigo.equals("") && !nome.equals("") && !cpf.equals("")) {
                 String minhaSQL = "insert into cliente(id_cliente,nome,cpf,telefone,email) values('" + codigo + "','" + nome + "','" + cpf + "','" + telefone + "','" + email + "');";
@@ -84,5 +92,65 @@ public class Cliente {
     }
 
     private void setLocationRelativeTo(Object o) {
+    }
+
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
+    public void trocarParaTelaMain(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaCliente(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-cadastro-cliente.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaVendedor(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-cadastro-vendedor.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaProduto(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-cadastro-produto.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaRelatorioAnalitico(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-relatorio-analitico.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaRelatorioSintetico(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-relatorio-sintetico.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void trocarParaTelaVenda(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("tela-venda.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

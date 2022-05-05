@@ -8,6 +8,6 @@ module com.example.fxproject {
 
     opens com.example.fxproject to javafx.fxml;
     exports com.example.fxproject;
-    exports pessoas;
+//    exports pessoas;
     opens pessoas to javafx.fxml;
 }

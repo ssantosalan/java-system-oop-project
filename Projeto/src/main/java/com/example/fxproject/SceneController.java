@@ -1,10 +1,13 @@
 package com.example.fxproject;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -70,5 +73,22 @@ public class SceneController {
         stage.show();
     }
 
+    @FXML
+    private TextField textoNomeCliente;
+
+    @FXML
+    private TextField textoCPFCliente;
+
+    @FXML
+    private TextField textoTelefoneCliente;
+
+    @FXML
+    private TextField textoCodigoCliente;
+
+    @FXML
+    private TextField textoEmailCliente;
+
+    @FXML
+    private Button botaoAdicionarCliente;
 
 }
