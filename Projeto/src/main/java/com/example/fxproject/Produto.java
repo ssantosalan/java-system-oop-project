@@ -13,7 +13,62 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class SceneController {
+public class Produto {
+
+    @FXML
+    private TextField textoCodigoProduto;
+
+    @FXML
+    private TextField textoDescricaoProduto;
+
+    @FXML
+    private TextField textoPrecoProduto;
+
+    @FXML
+    private TextField textoEstoqueProduto;
+
+    @FXML
+    private Button botaoAdicionarProduto;
+
+    @FXML
+    private TextField textoExcluirCodigoProduto;
+
+    @FXML
+    private TextField textoExcluirDescricaoProduto;
+
+    @FXML
+    private Button botaoExcluirProduto;
+
+    @FXML
+    private TableColumn<?, ?> tabelaRelatorioAnalitico;
+
+    @FXML
+    private TextField textoFiltrarCodigoProduto;
+
+    @FXML
+    private TextField textoFiltrarDescricaoProduto;
+
+    @FXML
+    private Button botaoPesquisarProduto;
+
+    @FXML
+    void botaoAdicionarProduto(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botaoExcluirProduto(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botaoPesquisarProduto(ActionEvent event) {
+
+    }
+
+    private void setLocationRelativeTo(Object o) {
+    }
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -74,69 +129,6 @@ public class SceneController {
         stage.show();
     }
 
-    @FXML
-    private TextField textoNomeCliente;
-
-    @FXML
-    private TextField textoCPFCliente;
-
-    @FXML
-    private TextField textoTelefoneCliente;
-
-    @FXML
-    private TextField textoCodigoCliente;
-
-    @FXML
-    private TextField textoEmailCliente;
-
-    @FXML
-    private Button botaoAdicionarCliente;
-
-    @FXML
-    void botaoGerarRelatorio2(ActionEvent event) { // DEPOIS RETIRA ISSO. FEITO SOMENTE PARA VISUALIZAR AO CLICAR NO DASHBOARD
-
-    }
-
-    @FXML
-    private TextField textoCodigoProduto;
-
-    @FXML
-    private TextField textoDescricaoProduto;
-
-    @FXML
-    private TextField textoPrecoProduto;
-
-    @FXML
-    private TextField textoEstoqueProduto;
-
-    @FXML
-    private Button botaoAdicionarProduto;
-
-    @FXML
-    private TextField textoExcluirCodigoProduto;
-
-    @FXML
-    private TextField textoExcluirDescricaoProduto;
-
-    @FXML
-    private Button botaoExcluirProduto;
-
-    @FXML
-    private TableColumn<?, ?> tabelaRelatorioAnalitico;
-
-    @FXML
-    private TextField textoEstoqueProduto1;
-
-    @FXML
-    private TextField textoEstoqueProduto11;
-
-    @FXML
-    private Button botaoAdicionarProduto1;
-
-    @FXML
-    void botaoAdicionarProduto(ActionEvent event) {
-
-    }
 
 
 }
