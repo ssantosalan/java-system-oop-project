@@ -40,7 +40,7 @@ Donwload JavaFX, Version: 18.0.1, Type: SDK: https://gluonhq.com/products/javafx
 
 If you are using Eclipse, IntelliJ or Netbeans:
 
-    --module-path "PATH" --add-modules javafx.controls,javafx.fxml
+    --module-path "E:\Desenvolvimento\JavaFX\javafx-sdk-17.0.2\lib" --add-modules javafx.controls,javafx.fxml
     
 If you are using vscode:
 
