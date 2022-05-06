@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -95,6 +96,7 @@ public class Vendedor {
                             + nome + "','" + email + "','" + senha + "','" + acesso + "');";
                     st.executeUpdate(minhasql);
                     System.out.println("REGISTRADO");
+                    new AlertBox("Usuário registrado!", "Registrado", new Alert(Alert.AlertType.CONFIRMATION));
 //                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
                 } else {
 //                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
