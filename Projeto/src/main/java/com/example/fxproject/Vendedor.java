@@ -121,6 +121,46 @@ public class Vendedor {
         }
     }
 
+    @FXML
+    private TextField textoExcluirNomeVendedor;
+
+    @FXML
+    private TextField textoExcluirCodigoVendedor;
+
+    @FXML
+    private Button botaoExcluirVendedor;
+
+    public void botaoExcluirVendedor(ActionEvent event) throws IOException {
+        String minhaSQL = "delete from usuario where id_usuario=" + textoExcluirCodigoVendedor.getText();
+        try {
+
+            if (!textoExcluirCodigoVendedor.getText().equals("") && !textoExcluirNomeVendedor.getText().equals("")) {
+                String sql = "select * from usuario where id_usuario=? and nome_usuario=?";
+                pst = con.prepareStatement(sql);
+                pst.setString(1, textoExcluirCodigoVendedor.getText());
+                pst.setString(2, textoExcluirNomeVendedor.getText());
+                resultado = pst.executeQuery();
+
+                if (resultado.next()) {
+                    String codigo = resultado.getString(1);
+                    String nome = resultado.getString(2);
+
+                    if (codigo.equals(textoExcluirCodigoVendedor.getText()) && nome.equals(textoExcluirNomeVendedor.getText())) {
+                        st.executeUpdate(minhaSQL);
+//                        JOptionPane.showMessageDialog(null, "Vendedor excluído com sucesso!");
+                    }
+                } else {
+//                    JOptionPane.showMessageDialog(null, "Informações incompatíveis!");
+                }
+            } else {
+//                JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
+            }
+
+        } catch (Exception e) {
+
+        }
+    }
+
     private Stage stage;
     private Scene scene;
     private Parent root;
