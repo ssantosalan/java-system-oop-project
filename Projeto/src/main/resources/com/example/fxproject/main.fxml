@@ -1,65 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.SceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="721.0" prefWidth="1262.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.SceneController">
    <children>
-      <BorderPane prefHeight="720.0" prefWidth="1280.0">
+      <BorderPane layoutX="-14.0" prefHeight="720.0" prefWidth="1280.0">
          <left>
-            <VBox prefHeight="668.0" prefWidth="62.0" style="-fx-border-color: #B3B3B3;" BorderPane.alignment="CENTER">
+            <VBox prefHeight="668.0" prefWidth="148.0" style="-fx-border-color: #B3B3B3;" BorderPane.alignment="CENTER">
                <children>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="30.0" prefWidth="77.0" text="home">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="33.0" prefWidth="148.0" text="Home">
                      <padding>
-                        <Insets left="40.0" />
+                        <Insets left="50.0" />
                      </padding>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaVendedor" prefHeight="30.0" prefWidth="77.0" text="vendedor">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="33.0" prefWidth="148.0" text="Vendedor">
                      <padding>
-                        <Insets left="40.0" />
+                        <Insets left="50.0" />
                      </padding>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaCliente" prefHeight="30.0" text="cliente">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="11.0" layoutY="290.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="33.0" prefWidth="148.0" text="Produtos">
                      <padding>
-                        <Insets left="40.0" />
+                        <Insets left="50.0" />
                      </padding>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaVenda" prefHeight="30.0" text="venda">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="33.0" prefWidth="148.0" text="Cliente">
                      <padding>
-                        <Insets left="40.0" />
+                        <Insets left="50.0" />
                      </padding>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaProduto" prefHeight="30.0" text="produto">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="11.0" layoutY="257.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="33.0" prefWidth="148.0" text="Vendas">
                      <padding>
-                        <Insets left="40.0" />
+                        <Insets left="50.0" />
                      </padding>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaRelatorioSintetico" prefHeight="30.0" text="sintético">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="11.0" layoutY="323.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="33.0" prefWidth="148.0" text="Relatório Sintético ">
                      <padding>
-                        <Insets left="40.0" />
+                        <Insets left="50.0" />
                      </padding>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#trocarParaTelaRelatorioAnalitico" prefHeight="30.0" text="analítico">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="11.0" layoutY="323.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="33.0" prefWidth="148.0" text="Relatório análitico">
                      <padding>
-                        <Insets left="40.0" />
+                        <Insets left="50.0" />
                      </padding>
                   </Button>
                </children></VBox>
          </left>
          <top>
-            <HBox prefHeight="52.0" prefWidth="893.0" style="-fx-background-color: #0478ED;" BorderPane.alignment="CENTER" />
+            <HBox prefHeight="45.0" prefWidth="1261.0" style="-fx-background-color: #0478ED;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="58.0" layoutY="13.0" text="Logo &amp; Logo" textFill="#f2ecec">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></HBox>
          </top>
+         <center>
+            <Pane prefHeight="675.0" prefWidth="1191.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="42.0" layoutY="27.0" />
+                  <Label layoutX="76.0" layoutY="69.0" />
+                  <ButtonBar layoutX="1076.0" layoutY="-35.14285659790039" />
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="95.0" layoutY="66.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="54.0" prefWidth="184.0" text="1 - INCLUIR VENDA">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="604.0" layoutY="360.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="54.0" prefWidth="194.0" text="4 - DEFINIR VENDEDOR">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="265.0" layoutY="162.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="54.0" prefWidth="194.0" text=" 2 - INCLUIR PRODUTO">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="432.0" layoutY="258.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="54.0" prefWidth="194.0" text="3 - INCLUIR CLIENTE">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="779.0" layoutY="455.0" mnemonicParsing="false" onAction="#trocarParaTelaMain" prefHeight="54.0" prefWidth="194.0" text="5 - FATURAMENTO">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <BorderPane layoutX="-133.0" layoutY="-80.0" prefHeight="200.0" prefWidth="215.0">
+                     <left>
+                        <ImageView fitHeight="30.0" fitWidth="33.0" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../../../../../../../../construction_project_plan_building_architect_design_develop-65_icon-icons.com_60241.png" />
+                           </image>
+                        </ImageView>
+                     </left>
+                  </BorderPane>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+            </Pane>
+         </center>
       </BorderPane>
-      <Pane layoutX="60.0" layoutY="52.0" prefHeight="668.0" prefWidth="1220.0">
-         <children>
-            <Label layoutX="42.0" layoutY="27.0" text="HOME" />
-            <Label layoutX="76.0" layoutY="69.0" text="mouse" />
-         </children></Pane>
    </children>
 </AnchorPane>
