@@ -12,8 +12,37 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.*;
 
 public class Produto {
+
+    public Connection con;
+    public Statement st;
+    public ResultSet resultado = null;
+    public ResultSet resultado2 = null;
+
+    Connection conexao = null;
+    PreparedStatement pst = null;
+    ResultSet rs = null;
+
+    public Produto() {
+        initComponents();
+        this.setLocationRelativeTo(null);
+        try {
+            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador", "root", "");
+            st = (Statement) conexao.createStatement();
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador", "root", "");
+            st = (Statement) con.createStatement();
+//            JOptionPane.showMessageDialog(null, "Conectado!");
+            System.out.println("Conectado no PRODUTO!");
+        } catch (Exception e) {
+//            JOptionPane.showMessageDialog(null, "Não Conectado!");
+            System.out.println("NÃO Conectado no PRODUTO!");
+        }
+    }
+
+    private void initComponents() {
+    }
 
     @FXML
     private TextField textoCodigoProduto;
@@ -51,10 +80,6 @@ public class Produto {
     @FXML
     private Button botaoPesquisarProduto;
 
-    @FXML
-    void botaoAdicionarProduto(ActionEvent event) {
-
-    }
 
     @FXML
     void botaoExcluirProduto(ActionEvent event) {
@@ -64,6 +89,49 @@ public class Produto {
     @FXML
     void botaoPesquisarProduto(ActionEvent event) {
 
+    }
+
+    public void botaoAdicionarProduto(ActionEvent event) throws IOException {
+        String nome;
+        int codigo, estoqueAtual;
+        double preco;
+
+        try {
+
+            if (textoCodigoProduto.getText().equals("") && !textoDescricaoProduto.getText().equals("") && !textoPrecoProduto.getText().equals("") && !textoEstoqueProduto.getText().equals("")) {
+
+                estoqueAtual = Integer.parseInt(textoEstoqueProduto.getText());
+                preco = Double.parseDouble(textoPrecoProduto.getText());
+                nome = textoDescricaoProduto.getText();
+
+                String minhasql = "insert into estoque (nome_produto, quantidade, valor_unit) values ('"
+                        + nome + "'," + estoqueAtual + "," + preco + ");";
+                st.executeUpdate(minhasql);
+                System.out.println("Registrado");
+//                JOptionPane.showMessageDialog(null, "Produto registrado!");
+
+            } else if (!textoCodigoProduto.getText().equals("") && !textoDescricaoProduto.getText().equals("") && !textoPrecoProduto.getText().equals("") && !textoEstoqueProduto.getText().equals("")) {
+
+                codigo = Integer.parseInt(textoCodigoProduto.getText());
+                estoqueAtual = Integer.parseInt(textoEstoqueProduto.getText());
+                preco = Double.parseDouble(textoPrecoProduto.getText());
+                nome = textoDescricaoProduto.getText();
+
+                String minhasql = "insert into estoque (id_produto, nome_produto, quantidade, valor_unit) values ('"
+                        + codigo + "','" + nome + "','" + estoqueAtual + "','" + preco + "')";
+                st.executeUpdate(minhasql);
+//                JOptionPane.showMessageDialog(null, "Produto registrado!");
+                System.out.println("Não Registrado");
+
+            } else {
+                System.out.println("Espaço obrigatório em branco!");
+//                JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
+            }
+
+        } catch (Exception e) {
+            System.out.println("Não gravado!");
+//            JOptionPane.showMessageDialog(null, "Não gravado!");
+        }
     }
 
     private void setLocationRelativeTo(Object o) {
