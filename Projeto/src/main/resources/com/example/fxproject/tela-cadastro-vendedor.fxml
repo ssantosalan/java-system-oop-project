@@ -59,16 +59,19 @@
       </BorderPane>
       <Pane layoutX="70.0" layoutY="62.0" prefHeight="668.0" prefWidth="1220.0">
          <children>
-            <TextField fx:id="textoNomeVendedor" layoutX="315.0" layoutY="105.0" prefHeight="25.0" prefWidth="211.0" promptText="Nome do vendedor *" />
-            <TextField layoutX="315.0" layoutY="159.0" prefHeight="25.0" prefWidth="211.0" promptText="Data de nascimento" />
-            <TextField fx:id="textoCodigoVendedor" layoutX="315.0" layoutY="50.0" prefHeight="25.0" prefWidth="211.0" promptText="Código" />
-            <TextField fx:id="textoEmailVendedor" layoutX="315.0" layoutY="405.0" prefHeight="25.0" prefWidth="456.0" promptText="Email *" />
-            <TextField fx:id="textoSenhaVendedor" layoutX="315.0" layoutY="468.0" prefHeight="25.0" prefWidth="211.0" promptText="Senha *" />
-            <TextField fx:id="textoConfirmarSenhaVendedor" layoutX="560.0" layoutY="468.0" prefHeight="25.0" prefWidth="211.0" promptText="Repetir a senha *" />
-            <Label layoutX="195.0" layoutY="33.0" text="Dados básicos" />
-            <Label layoutX="189.0" layoutY="397.0" text="Dados de acesso" />
+            <TextField fx:id="textoNomeVendedor" layoutX="566.0" layoutY="50.0" prefHeight="25.0" prefWidth="211.0" promptText="Nome do vendedor *" />
+            <TextField fx:id="textoCodigoVendedor" layoutX="321.0" layoutY="50.0" prefHeight="25.0" prefWidth="211.0" promptText="Código" />
+            <TextField fx:id="textoEmailVendedor" layoutX="321.0" layoutY="109.0" prefHeight="25.0" prefWidth="456.0" promptText="Email *" />
+            <TextField fx:id="textoSenhaVendedor" layoutX="321.0" layoutY="172.0" prefHeight="25.0" prefWidth="211.0" promptText="Senha *" />
+            <TextField fx:id="textoConfirmarSenhaVendedor" layoutX="566.0" layoutY="172.0" prefHeight="25.0" prefWidth="211.0" promptText="Repetir a senha *" />
+            <Label layoutX="182.0" layoutY="33.0" text="Dados básicos" />
+            <Label layoutX="182.0" layoutY="101.0" text="Dados de acesso" />
             <Label layoutX="14.0" layoutY="6.0" text="Cadastro de vendedor" textFill="#0478ed" />
-            <Button fx:id="botaoAdicionarVendedor" layoutX="666.0" layoutY="525.0" mnemonicParsing="false" onAction="#cadastrarVendedor" text="Cadastrar vendedor" textFill="#0478ed" />
+            <Button fx:id="botaoAdicionarVendedor" layoutX="657.0" layoutY="229.0" mnemonicParsing="false" onAction="#cadastrarVendedor" text="Cadastrar vendedor" textFill="#0478ed" />
+            <TextField fx:id="textoExcluirNomeVendedor" layoutX="565.0" layoutY="291.0" prefHeight="25.0" prefWidth="211.0" promptText="Nome do vendedor *" />
+            <TextField fx:id="textoExcluirCodigoVendedor" layoutX="320.0" layoutY="291.0" prefHeight="25.0" prefWidth="211.0" promptText="Código *" />
+            <Label layoutX="188.0" layoutY="274.0" text="Excluir Vendedor" />
+            <Button fx:id="botaoExcluirVendedor" layoutX="671.0" layoutY="341.0" mnemonicParsing="false" onAction="#botaoExcluirVendedor" text="Excluir Vendedor" textFill="#0478ed" />
          </children>
       </Pane>
    </children>
