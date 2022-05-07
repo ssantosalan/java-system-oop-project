@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.Cliente">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.Cliente">
    <children>
       <BorderPane prefHeight="720.0" prefWidth="1280.0">
          <left>
@@ -59,16 +59,20 @@
       </BorderPane>
       <Pane layoutX="70.0" layoutY="62.0" prefHeight="668.0" prefWidth="1220.0">
          <children>
-            <TextField fx:id="textoNomeCliente" layoutX="315.0" layoutY="35.0" prefHeight="25.0" prefWidth="211.0" promptText="Nome do cliente" />
-            <TextField fx:id="textoCPFCliente" layoutX="622.0" layoutY="35.0" promptText="CPF" />
-            <TextField layoutX="622.0" layoutY="96.0" promptText="Sexo" />
-            <TextField fx:id="textoTelefoneCliente" layoutX="315.0" layoutY="96.0" prefHeight="25.0" prefWidth="211.0" promptText="Telefone" />
-            <TextField layoutX="315.0" layoutY="153.0" prefHeight="25.0" prefWidth="211.0" promptText="Data de nascimento" />
-            <TextField fx:id="textoCodigoCliente" layoutX="315.0" layoutY="227.0" prefHeight="25.0" prefWidth="211.0" />
-            <TextField fx:id="textoEmailCliente" layoutX="315.0" layoutY="284.0" prefHeight="25.0" prefWidth="456.0" promptText="Email" />
-            <Label layoutX="195.0" layoutY="27.0" text="Dados básicos" />
+            <TextField fx:id="textoCodigoCliente" layoutX="116.0" layoutY="60.0" prefHeight="25.0" prefWidth="211.0" promptText="Cödigo" />
+            <TextField fx:id="textoNomeCliente" layoutX="116.0" layoutY="109.0" prefHeight="25.0" prefWidth="211.0" promptText="Nome" />
+            <TextField fx:id="textoCPFCliente" layoutX="116.0" layoutY="153.0" prefHeight="25.0" prefWidth="211.0" promptText="CPF" />
+            <TextField fx:id="textoTelefoneCliente" layoutX="116.0" layoutY="199.0" prefHeight="25.0" prefWidth="211.0" promptText="Telefone" />
+            <TextField fx:id="textoEmailCliente" layoutX="116.0" layoutY="246.0" prefHeight="25.0" prefWidth="290.0" promptText="E-mail" />
+            <Label layoutX="116.0" layoutY="27.0" text="Dados básicos" />
             <Label layoutX="14.0" text="Cadastro de cliente" textFill="#0478ed" />
-            <Button fx:id="botaoAdicionarCliente" layoutX="666.0" layoutY="357.0" mnemonicParsing="false" onAction="#cadastrarCliente" text="Cadastrar cliente" textFill="#0478ed" />
+            <Button fx:id="botaoAdicionarCliente" layoutX="301.0" layoutY="297.0" mnemonicParsing="false" onAction="#botaoAdicionarCliente" text="Cadastrar cliente" textFill="#0478ed" />
+            <TextField fx:id="textoExcluirCodigoCliente" layoutX="749.0" layoutY="58.0" prefHeight="25.0" prefWidth="211.0" promptText="Cödigo" />
+            <TextField fx:id="textoExcluirCPFCliente" layoutX="749.0" layoutY="109.0" prefHeight="25.0" prefWidth="211.0" promptText="CPF" />
+            <TextField fx:id="textoExcluirNomeCliente" layoutX="749.0" layoutY="153.0" prefHeight="25.0" prefWidth="211.0" promptText="Nome" />
+            <Button fx:id="botaoExcluirCliente" layoutX="908.0" layoutY="297.0" mnemonicParsing="false" onAction="#botaoExcluirCliente" text="Cadastrar cliente" textFill="#0478ed" />
+            <Label layoutX="675.0" text="Excluir Cliente" textFill="#0478ed" />
+            <Label layoutX="749.0" layoutY="27.0" text="Dados básicos" />
          </children>
       </Pane>
    </children>

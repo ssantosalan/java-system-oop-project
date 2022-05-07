@@ -30,9 +30,9 @@ public class Cliente {
 
         this.setLocationRelativeTo(null);
         try {
-            conexao = getConnection("jdbc:mysql://localhost:3306/projetointegrador", "root", "");
+            conexao = getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) conexao.createStatement();
-            con = getConnection("jdbc:mysql://localhost:3306/projetointegrador", "root", "");
+            con = getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) con.createStatement();
 //            JOptionPane.showMessageDialog(null, "Conectado!");
         } catch (Exception e) {
@@ -53,17 +53,58 @@ public class Cliente {
     private TextField textoTelefoneCliente;
 
     @FXML
-    private TextField textoCodigoVendedor;
+    private TextField textoExcluirCPFCliente;
+
+    @FXML
+    private TextField textoExcluirCodigoCliente;
+
+    @FXML
+    private TextField textoExcluirNomeCliente;
 
     @FXML
     private TextField textoEmailCliente;
 
-    @FXML
-    private Button botaoAdicionarCliente;
-
 
     @FXML
-    public void cadastrarCliente(ActionEvent event) throws IOException {
+    public void botaoExcluirCliente(ActionEvent event) throws IOException {
+        String minhaSQL = "delete from cliente where id_cliente=" + textoExcluirCodigoCliente.getText();
+        try {
+
+            if (!textoExcluirCodigoCliente.getText().equals("") && !textoExcluirCPFCliente.getText().equals("") && !textoExcluirNomeCliente.getText().equals("")) {
+                String sql = "select * from cliente where id_cliente=? and nome=? and CPF=?";
+                pst = con.prepareStatement(sql);
+                pst.setString(1, textoExcluirCodigoCliente.getText());
+                pst.setString(2, textoExcluirNomeCliente.getText());
+                pst.setString(3, textoExcluirCPFCliente.getText());
+                resultado = pst.executeQuery();
+
+                if (resultado.next()) {
+                    String codigo = resultado.getString(1);
+                    String nome = resultado.getString(2);
+                    String CPF = resultado.getString(3);
+
+                    if (codigo.equals(textoExcluirCodigoCliente.getText()) && nome.equals(textoExcluirNomeCliente.getText()) && CPF.equals(textoExcluirCPFCliente.getText())) {
+                        st.executeUpdate(minhaSQL);
+                        System.out.println("Cliente excluído com sucesso!");
+                        //JOptionPane.showMessageDialog(null, "Cliente excluído com sucesso!");
+                    }
+                } else {
+                    System.out.println("Informações incompatíveis!");
+                   // JOptionPane.showMessageDialog(null, "Informações incompatíveis!");
+                }
+
+            } else {
+                System.out.println("Espaço obrigatório em branco!");
+               // JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
+            }
+
+        } catch (Exception e) {
+
+        }
+    }
+
+    @FXML
+    public void botaoAdicionarCliente(ActionEvent event) throws IOException {
         String codigo = textoCodigoCliente.getText();
         String nome = textoNomeCliente.getText();
         String cpf = textoCPFCliente.getText();
