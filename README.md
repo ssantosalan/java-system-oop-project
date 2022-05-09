@@ -22,7 +22,7 @@ Java project using OOP (Object Oriented Programming)
 - Class diagram
 - Git/Github
 - Wireframes
-- MySQL
+- MySQL Database
 
 ## What will you need?
 
