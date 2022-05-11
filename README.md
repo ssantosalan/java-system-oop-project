@@ -21,7 +21,7 @@ Java project using OOP (Object Oriented Programming).
 - Use Case Diagram
 - Class diagram
 - Git/Github
-- Wireframes
+- Wireframe
 - MySQL Database
 
 ## What will you need?
