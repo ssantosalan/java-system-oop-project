@@ -20,7 +20,7 @@ Java project using OOP (Object Oriented Programming).
 - JavaFX
 - Use Case Diagram
 - Class diagram
-- Git/Github
+- Git and Github
 - Wireframe
 - MySQL Database
 
