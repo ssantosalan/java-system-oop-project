@@ -72,9 +72,9 @@
             <Label layoutX="511.0" layoutY="62.0" text="Excluir Produto" />
             <TextField fx:id="textoExcluirDescricaoProduto" layoutX="684.0" layoutY="129.0" prefHeight="25.0" prefWidth="211.0" promptText="Descrição *" />
             <Button fx:id="botaoExcluirProduto" layoutX="800.0" layoutY="192.0" mnemonicParsing="false" onAction="#botaoExcluirProduto" text="Excluir Produto" textFill="#0478ed" />
-            <TableView layoutX="72.0" layoutY="419.0" prefHeight="218.0" prefWidth="978.0">
+            <TableView fx:id="tabelaFiltrarProduto" layoutX="72.0" layoutY="419.0" prefHeight="218.0" prefWidth="978.0">
                <columns>
-                  <TableColumn fx:id="tabelaRelatorioAnalitico" prefWidth="75.0" text="Código Produto" />
+                  <TableColumn prefWidth="75.0" text="Código Produto" />
                   <TableColumn prefWidth="75.0" text="Descrição" />
                   <TableColumn prefWidth="168.0" text="Valor" />
                   <TableColumn prefWidth="103.0" text="Estoque Atual" />
