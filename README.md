@@ -37,6 +37,8 @@ Download MySQL Installer 8.0.29: https://dev.mysql.com/downloads/windows/install
 Donwload JavaFX, Version: 18.0.1, Type: SDK: https://gluonhq.com/products/javafx/
 ![image](https://user-images.githubusercontent.com/79291946/165002422-07b201b5-37e0-4677-ad20-9081d968dc34.png)
 
+Mysql connector
+
 
 If you are using Eclipse, IntelliJ or Netbeans:
 
