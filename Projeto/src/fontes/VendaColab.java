@@ -282,8 +282,8 @@ public class VendaColab extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel1.setForeground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(0, 127, 255));
+        jPanel1.setForeground(new java.awt.Color(0, 127, 255));
 
         jTabbedPane1.setBackground(new java.awt.Color(51, 51, 51));
         jTabbedPane1.setBackground(new java.awt.Color(0, 127, 255));
