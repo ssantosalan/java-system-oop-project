@@ -80,7 +80,7 @@ public class Login extends javax.swing.JFrame {
         
         this.setLocationRelativeTo(null);
         try {
-            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador", "root", "");
+            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) conexao.createStatement();
             JOptionPane.showMessageDialog(null, "Conectado!");
         } catch (Exception e) {
@@ -112,18 +112,18 @@ public class Login extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 204, 0), new java.awt.Color(204, 204, 0), new java.awt.Color(204, 204, 0), new java.awt.Color(204, 204, 0)));
         jPanel1.setForeground(new java.awt.Color(204, 204, 0));
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(171, 169, 169));
         jLabel1.setText("Login");
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(171, 169, 169));
         jLabel2.setText("Senha");
 
         txtLogin.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
@@ -137,7 +137,7 @@ public class Login extends javax.swing.JFrame {
         txtSenha.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
         txtSenha.setForeground(new java.awt.Color(0, 0, 0));
 
-        botaoLogin.setBackground(new java.awt.Color(0, 0, 0));
+        botaoLogin.setBackground(new java.awt.Color(255, 255, 255));
         botaoLogin.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
         botaoLogin.setForeground(new java.awt.Color(0, 127, 255));
         botaoLogin.setText("Entrar");
@@ -152,7 +152,7 @@ public class Login extends javax.swing.JFrame {
         jLabel3.setText("Blues");
 
         jLabel4.setFont(new java.awt.Font("Tw Cen MT", 0, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel4.setForeground(new java.awt.Color(171, 169, 169));
         jLabel4.setText("Nova");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

@@ -29,7 +29,7 @@ public class EditarProduto extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) con.createStatement();
             
         } catch (Exception e) {        
