@@ -2987,8 +2987,8 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoAcessoColaboradorVendedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAcessoColaboradorVendedorMouseClicked
         // TODO add your handling code here:
-        botaoAcessoColaboradorVendedor.setForeground(Color.yellow);
-        botaoAcessoColaboradorVendedor.setBackground(Color.yellow);
+        botaoAcessoColaboradorVendedor.setForeground(Color.CYAN);
+        botaoAcessoColaboradorVendedor.setBackground(Color.CYAN);
         botaoAcessoGerenteVendedor.setForeground(Color.gray);
         botaoAcessoGerenteVendedor.setBackground(Color.gray);
     }//GEN-LAST:event_botaoAcessoColaboradorVendedorMouseClicked
@@ -3008,25 +3008,25 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoAcessoGerenteVendedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAcessoGerenteVendedorMouseClicked
         // TODO add your handling code here:
-        botaoAcessoGerenteVendedor.setForeground(Color.yellow);
-        botaoAcessoGerenteVendedor.setBackground(Color.yellow);
+        botaoAcessoGerenteVendedor.setForeground(Color.CYAN);
+        botaoAcessoGerenteVendedor.setBackground(Color.CYAN);
         botaoAcessoColaboradorVendedor.setForeground(Color.gray);
         botaoAcessoColaboradorVendedor.setBackground(Color.gray);
     }//GEN-LAST:event_botaoAcessoGerenteVendedorMouseClicked
 
     private void botaoAdicionarProdutoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarProdutoMouseEntered
         // TODO add your handling code here:
-        botaoAdicionarProduto.setBackground(Color.yellow);
+        botaoAdicionarProduto.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoAdicionarProdutoMouseEntered
 
     private void botaoExcluirProdutoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoExcluirProdutoMouseEntered
         // TODO add your handling code here:
-        botaoExcluirProduto.setBackground(Color.yellow);
+        botaoExcluirProduto.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoExcluirProdutoMouseEntered
 
     private void botaoPesquisarProdutoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoPesquisarProdutoMouseEntered
         // TODO add your handling code here:
-        botaoPesquisarProduto.setBackground(Color.yellow);
+        botaoPesquisarProduto.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoPesquisarProdutoMouseEntered
 
     private void botaoAdicionarProdutoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarProdutoMouseExited
@@ -3046,7 +3046,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoAdicionarClienteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarClienteMouseEntered
         // TODO add your handling code here:
-        botaoAdicionarCliente.setBackground(Color.yellow);
+        botaoAdicionarCliente.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoAdicionarClienteMouseEntered
 
     private void botaoAdicionarClienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarClienteMouseExited
@@ -3056,7 +3056,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoExcluirClienteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoExcluirClienteMouseEntered
         // TODO add your handling code here:
-        botaoExcluirCliente.setBackground(Color.yellow);
+        botaoExcluirCliente.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoExcluirClienteMouseEntered
 
     private void botaoExcluirClienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoExcluirClienteMouseExited
@@ -3066,7 +3066,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoPesquisarClienteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoPesquisarClienteMouseEntered
         // TODO add your handling code here:
-        botaoPesquisarCliente.setBackground(Color.yellow);
+        botaoPesquisarCliente.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoPesquisarClienteMouseEntered
 
     private void botaoPesquisarClienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoPesquisarClienteMouseExited
@@ -3076,7 +3076,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoAdicionarVendedorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarVendedorMouseEntered
         // TODO add your handling code here:
-        botaoAdicionarVendedor.setBackground(Color.yellow);
+        botaoAdicionarVendedor.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoAdicionarVendedorMouseEntered
 
     private void botaoAdicionarVendedorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarVendedorMouseExited
@@ -3086,7 +3086,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoExcluirVendedorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoExcluirVendedorMouseEntered
         // TODO add your handling code here:
-        botaoExcluirVendedor.setBackground(Color.yellow);
+        botaoExcluirVendedor.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoExcluirVendedorMouseEntered
 
     private void botaoExcluirVendedorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoExcluirVendedorMouseExited
@@ -3096,7 +3096,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoPesquisarVendedorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoPesquisarVendedorMouseEntered
         // TODO add your handling code here:
-        botaoPesquisarVendedor.setBackground(Color.yellow);
+        botaoPesquisarVendedor.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoPesquisarVendedorMouseEntered
 
     private void botaoPesquisarVendedorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoPesquisarVendedorMouseExited
@@ -3111,7 +3111,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoFinalizarVendaCaixaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoFinalizarVendaCaixaMouseEntered
         // TODO add your handling code here:
-        botaoFinalizarVendaCaixa.setBackground(Color.yellow);
+        botaoFinalizarVendaCaixa.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoFinalizarVendaCaixaMouseEntered
 
     private void botaoRemoverProdutoCaixaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoRemoverProdutoCaixaMouseExited
@@ -3121,7 +3121,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoRemoverProdutoCaixaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoRemoverProdutoCaixaMouseEntered
         // TODO add your handling code here:
-        botaoRemoverProdutoCaixa1.setBackground(Color.yellow);
+        botaoRemoverProdutoCaixa1.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoRemoverProdutoCaixaMouseEntered
 
     private void botaoAdicionarProdutoCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAdicionarProdutoCaixaActionPerformed
@@ -3162,7 +3162,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoAdicionarProdutoCaixaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarProdutoCaixaMouseEntered
         // TODO add your handling code here:
-        botaoAdicionarProdutoCaixa.setBackground(Color.yellow);
+        botaoAdicionarProdutoCaixa.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoAdicionarProdutoCaixaMouseEntered
 
     private void botaoPesquisarProdutoCaixaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoPesquisarProdutoCaixaMouseExited
@@ -3172,7 +3172,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoPesquisarProdutoCaixaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoPesquisarProdutoCaixaMouseEntered
         // TODO add your handling code here:
-        botaoPesquisarProdutoCaixa.setBackground(Color.yellow);
+        botaoPesquisarProdutoCaixa.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoPesquisarProdutoCaixaMouseEntered
 
     private void botaoPesquisarVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPesquisarVendedorActionPerformed
@@ -3604,7 +3604,7 @@ public class VendaColab extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoEditarProdutoActionPerformed
 
     private void botaoEditarProdutoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoEditarProdutoMouseEntered
-        botaoEditarProduto.setBackground(Color.yellow);
+        botaoEditarProduto.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoEditarProdutoMouseEntered
 
     private void botaoEditarProdutoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoEditarProdutoMouseExited
@@ -3663,7 +3663,7 @@ public class VendaColab extends javax.swing.JFrame {
     }//GEN-LAST:event_textoCodigoProdutoActionPerformed
 
     private void botaoListarProdutoVendaTesteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoListarProdutoVendaTesteMouseEntered
-        botaoListarProdutoVendaTeste.setBackground(Color.yellow);
+        botaoListarProdutoVendaTeste.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoListarProdutoVendaTesteMouseEntered
 
     private void botaoListarProdutoVendaTesteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoListarProdutoVendaTesteMouseExited
@@ -3736,7 +3736,7 @@ public class VendaColab extends javax.swing.JFrame {
 
     private void botaoAdicionarCPFClientebotaoRemoverProdutoCaixaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarCPFClientebotaoRemoverProdutoCaixaMouseEntered
         // TODO add your handling code here:
-        botaoAdicionarCPFCliente.setBackground(Color.yellow);
+        botaoAdicionarCPFCliente.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoAdicionarCPFClientebotaoRemoverProdutoCaixaMouseEntered
 
     private void botaoAdicionarCPFClientebotaoRemoverProdutoCaixaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoAdicionarCPFClientebotaoRemoverProdutoCaixaMouseExited
@@ -3831,7 +3831,7 @@ public class VendaColab extends javax.swing.JFrame {
     }//GEN-LAST:event_jnumeroPedidoActionPerformed
 
     private void botaoGerarRelatorio2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorio2MouseEntered
-        botaoGerarRelatorio2.setBackground(Color.yellow);
+        botaoGerarRelatorio2.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoGerarRelatorio2MouseEntered
 
     private void botaoGerarRelatorio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorio2MouseExited
@@ -3839,8 +3839,8 @@ public class VendaColab extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoGerarRelatorio2MouseExited
 
     private void RBDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBDActionPerformed
-        RBD.setForeground(Color.yellow);
-        RBD.setBackground(Color.yellow);
+        RBD.setForeground(Color.CYAN);
+        RBD.setBackground(Color.CYAN);
         RBM.setForeground(Color.gray);
         RBM.setBackground(Color.gray);
         RBA.setForeground(Color.gray);
@@ -3848,7 +3848,7 @@ public class VendaColab extends javax.swing.JFrame {
     }//GEN-LAST:event_RBDActionPerformed
 
     private void botaoGerarRelatorioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorioMouseEntered
-        botaoGerarRelatorio.setBackground(Color.yellow);
+        botaoGerarRelatorio.setBackground(Color.CYAN);
     }//GEN-LAST:event_botaoGerarRelatorioMouseEntered
 
     private void botaoGerarRelatorioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorioMouseExited
@@ -3972,8 +3972,8 @@ public class VendaColab extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoAcessoGerenteVendedorActionPerformed
 
     private void RBMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBMActionPerformed
-        RBM.setForeground(Color.yellow);
-        RBM.setBackground(Color.yellow);
+        RBM.setForeground(Color.CYAN);
+        RBM.setBackground(Color.CYAN);
         RBD.setForeground(Color.gray);
         RBD.setBackground(Color.gray);
         RBA.setForeground(Color.gray);
@@ -3981,8 +3981,8 @@ public class VendaColab extends javax.swing.JFrame {
     }//GEN-LAST:event_RBMActionPerformed
 
     private void RBAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBAActionPerformed
-        RBA.setForeground(Color.yellow);
-        RBA.setBackground(Color.yellow);
+        RBA.setForeground(Color.CYAN);
+        RBA.setBackground(Color.CYAN);
         RBM.setForeground(Color.gray);
         RBM.setBackground(Color.gray);
         RBD.setForeground(Color.gray);
@@ -4074,7 +4074,7 @@ public class VendaColab extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoGerarRelatorio2ActionPerformed
 
     private void jdataInicialMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jdataInicialMouseEntered
-        jdataInicial.setBackground(Color.yellow);
+        jdataInicial.setBackground(Color.CYAN);
     }//GEN-LAST:event_jdataInicialMouseEntered
 
     private void jdataInicialMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jdataInicialMouseExited
