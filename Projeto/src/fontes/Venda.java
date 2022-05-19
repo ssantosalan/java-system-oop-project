@@ -1201,7 +1201,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel23.setForeground(new java.awt.Color(51, 51, 51));
 
         tabelaFiltrarCliente.setBackground(new java.awt.Color(255, 255, 255));
-        tabelaFiltrarCliente.setForeground(new java.awt.Color(204, 204, 0));
+        tabelaFiltrarCliente.setForeground(new java.awt.Color(0, 127, 255));
         tabelaFiltrarCliente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -1727,7 +1727,7 @@ public class Venda extends javax.swing.JFrame {
 
         tabelaFiltrarVendedor.setBackground(new java.awt.Color(51, 51, 51));
         tabelaFiltrarVendedor.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        tabelaFiltrarVendedor.setForeground(new java.awt.Color(204, 204, 0));
+        tabelaFiltrarVendedor.setForeground(new java.awt.Color(0, 127, 255));
         tabelaFiltrarVendedor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -2084,7 +2084,7 @@ public class Venda extends javax.swing.JFrame {
 
         tabelaFiltrarProduto.setBackground(new java.awt.Color(255, 255, 255));
         tabelaFiltrarProduto.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        tabelaFiltrarProduto.setForeground(new java.awt.Color(204, 204, 0));
+        tabelaFiltrarProduto.setForeground(new java.awt.Color(0, 127, 255));
         tabelaFiltrarProduto.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -2437,7 +2437,7 @@ public class Venda extends javax.swing.JFrame {
 
         tabelaRelatorioAnalitico.setBackground(new java.awt.Color(255, 255, 255));
         tabelaRelatorioAnalitico.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        tabelaRelatorioAnalitico.setForeground(new java.awt.Color(204, 204, 0));
+        tabelaRelatorioAnalitico.setForeground(new java.awt.Color(0, 127, 255));
         tabelaRelatorioAnalitico.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -2507,7 +2507,7 @@ public class Venda extends javax.swing.JFrame {
 
         tabelaRelatorioSintetico.setBackground(new java.awt.Color(255, 255, 255));
         tabelaRelatorioSintetico.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        tabelaRelatorioSintetico.setForeground(new java.awt.Color(204, 204, 0));
+        tabelaRelatorioSintetico.setForeground(new java.awt.Color(0, 127, 255));
         tabelaRelatorioSintetico.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
