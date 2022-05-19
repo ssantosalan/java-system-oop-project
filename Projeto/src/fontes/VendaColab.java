@@ -293,7 +293,7 @@ public class VendaColab extends javax.swing.JFrame {
         jPanel28.setBackground(new java.awt.Color(51, 51, 51));
         jPanel28.setForeground(new java.awt.Color(51, 51, 51));
 
-        jPanel16.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel16.setBackground(new java.awt.Color(0, 127, 255));
 
         jLabel13.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(204, 204, 0));
@@ -416,7 +416,7 @@ public class VendaColab extends javax.swing.JFrame {
         textoQuantidadeProduto.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
 
         jLabel72.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel72.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel72.setForeground(new java.awt.Color(0, 127, 255));
         jLabel72.setText("quantidade");
 
         botaoAdicionarProdutoCaixa.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
@@ -493,7 +493,7 @@ public class VendaColab extends javax.swing.JFrame {
 
         jLabel64.setBackground(new java.awt.Color(204, 204, 0));
         jLabel64.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel64.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel64.setForeground(new java.awt.Color(0, 127, 255));
         jLabel64.setText("Lista");
 
         jLabel68.setBackground(new java.awt.Color(204, 204, 0));
@@ -566,12 +566,12 @@ public class VendaColab extends javax.swing.JFrame {
 
         jLabel27.setBackground(new java.awt.Color(204, 204, 0));
         jLabel27.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel27.setForeground(new java.awt.Color(0, 127, 255));
         jLabel27.setText("Carrinho");
 
         jLabel69.setBackground(new java.awt.Color(204, 204, 0));
         jLabel69.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel69.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel69.setForeground(new java.awt.Color(0, 127, 255));
         jLabel69.setText("Filtrar");
 
         jLabel70.setBackground(new java.awt.Color(204, 204, 0));
@@ -584,7 +584,7 @@ public class VendaColab extends javax.swing.JFrame {
         jPanel33.setForeground(new java.awt.Color(51, 51, 51));
 
         jLabel73.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel73.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel73.setForeground(new java.awt.Color(0, 127, 255));
         jLabel73.setText("Vendedor");
 
         labelVendedor.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -592,7 +592,7 @@ public class VendaColab extends javax.swing.JFrame {
         labelVendedor.setText("Sem vendedor");
 
         jLabel74.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel74.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel74.setForeground(new java.awt.Color(0, 127, 255));
         jLabel74.setText("Cliente");
 
         labelCliente.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -660,7 +660,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel29.setText("Valor Total");
 
         labelTotal.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        labelTotal.setForeground(new java.awt.Color(204, 204, 0));
+        labelTotal.setForeground(new java.awt.Color(0, 127, 255));
         labelTotal.setText("0");
 
         jLabel76.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -814,7 +814,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel50.setText("Nome");
 
         jLabel51.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel51.setForeground(new java.awt.Color(0, 127, 255));
         jLabel51.setText("*");
 
         jLabel52.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -822,7 +822,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel52.setText("CPF");
 
         jLabel53.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel53.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel53.setForeground(new java.awt.Color(0, 127, 255));
         jLabel53.setText("*");
 
         jLabel54.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -936,7 +936,7 @@ public class VendaColab extends javax.swing.JFrame {
                 .addContainerGap(49, Short.MAX_VALUE))
         );
 
-        jPanel20.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel20.setBackground(new java.awt.Color(0, 127, 255));
         jPanel20.setForeground(new java.awt.Color(0, 0, 0));
         jPanel20.setPreferredSize(new java.awt.Dimension(639, 34));
 
@@ -961,9 +961,9 @@ public class VendaColab extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel39.setBackground(new java.awt.Color(204, 204, 0));
+        jLabel39.setBackground(new java.awt.Color(0, 127, 255));
         jLabel39.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel39.setForeground(new java.awt.Color(0, 127, 255));
         jLabel39.setText("Incluir");
 
         jLabel40.setBackground(new java.awt.Color(204, 204, 0));
@@ -973,7 +973,7 @@ public class VendaColab extends javax.swing.JFrame {
 
         jLabel41.setBackground(new java.awt.Color(204, 204, 0));
         jLabel41.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel41.setForeground(new java.awt.Color(0, 127, 255));
         jLabel41.setText("Excluir");
 
         jLabel42.setBackground(new java.awt.Color(204, 204, 0));
@@ -991,7 +991,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel66.setText("Nome");
 
         jLabel67.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel67.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel67.setForeground(new java.awt.Color(0, 127, 255));
         jLabel67.setText("*");
 
         textoExcluirCodigoCliente.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
@@ -1037,7 +1037,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel55.setText("Código");
 
         jLabel57.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel57.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel57.setForeground(new java.awt.Color(0, 127, 255));
         jLabel57.setText("*");
 
         jLabel59.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -1045,7 +1045,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel59.setText("CPF");
 
         jLabel58.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel58.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel58.setForeground(new java.awt.Color(0, 127, 255));
         jLabel58.setText("*");
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
@@ -1108,7 +1108,7 @@ public class VendaColab extends javax.swing.JFrame {
 
         jLabel43.setBackground(new java.awt.Color(204, 204, 0));
         jLabel43.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel43.setForeground(new java.awt.Color(0, 127, 255));
         jLabel43.setText("Filtrar");
 
         jLabel44.setBackground(new java.awt.Color(204, 204, 0));
@@ -1308,7 +1308,7 @@ public class VendaColab extends javax.swing.JFrame {
         jPanel9.setBackground(new java.awt.Color(51, 51, 51));
         jPanel9.setForeground(new java.awt.Color(51, 51, 51));
 
-        jPanel24.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel24.setBackground(new java.awt.Color(0, 127, 255));
         jPanel24.setForeground(new java.awt.Color(0, 0, 0));
         jPanel24.setPreferredSize(new java.awt.Dimension(639, 34));
 
@@ -1335,7 +1335,7 @@ public class VendaColab extends javax.swing.JFrame {
 
         jLabel61.setBackground(new java.awt.Color(204, 204, 0));
         jLabel61.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel61.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel61.setForeground(new java.awt.Color(0, 127, 255));
         jLabel61.setText("Incluir");
 
         jLabel62.setBackground(new java.awt.Color(204, 204, 0));
@@ -1387,7 +1387,7 @@ public class VendaColab extends javax.swing.JFrame {
         });
 
         jLabel86.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel86.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel86.setForeground(new java.awt.Color(0, 127, 255));
         jLabel86.setText("*");
 
         jLabel87.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -1437,19 +1437,19 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel28.setText("Confirmar Senha");
 
         jLabel88.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel88.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel88.setForeground(new java.awt.Color(0, 127, 255));
         jLabel88.setText("*");
 
         jLabel89.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel89.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel89.setForeground(new java.awt.Color(0, 127, 255));
         jLabel89.setText("*");
 
         jLabel90.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel90.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel90.setForeground(new java.awt.Color(0, 127, 255));
         jLabel90.setText("*");
 
         jLabel91.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel91.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel91.setForeground(new java.awt.Color(0, 127, 255));
         jLabel91.setText("*");
 
         javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
@@ -1541,7 +1541,7 @@ public class VendaColab extends javax.swing.JFrame {
 
         jLabel94.setBackground(new java.awt.Color(204, 204, 0));
         jLabel94.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel94.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel94.setForeground(new java.awt.Color(0, 127, 255));
         jLabel94.setText("Excluir");
 
         jLabel95.setBackground(new java.awt.Color(204, 204, 0));
@@ -1559,7 +1559,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel100.setText("Nome");
 
         jLabel101.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel101.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel101.setForeground(new java.awt.Color(0, 127, 255));
         jLabel101.setText("*");
 
         jLabel102.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -1567,7 +1567,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel102.setText("Código");
 
         jLabel103.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel103.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel103.setForeground(new java.awt.Color(0, 127, 255));
         jLabel103.setText("*");
 
         textoExcluirCodigoVendedor.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
@@ -1643,7 +1643,7 @@ public class VendaColab extends javax.swing.JFrame {
 
         jLabel104.setBackground(new java.awt.Color(204, 204, 0));
         jLabel104.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel104.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel104.setForeground(new java.awt.Color(0, 127, 255));
         jLabel104.setText("Filtrar");
 
         jLabel105.setBackground(new java.awt.Color(204, 204, 0));
@@ -1845,7 +1845,7 @@ public class VendaColab extends javax.swing.JFrame {
         jPanel10.setBackground(new java.awt.Color(51, 51, 51));
         jPanel10.setForeground(new java.awt.Color(51, 51, 51));
 
-        jPanel11.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel11.setBackground(new java.awt.Color(0, 127, 255));
         jPanel11.setForeground(new java.awt.Color(0, 0, 0));
         jPanel11.setPreferredSize(new java.awt.Dimension(639, 34));
 
@@ -1917,15 +1917,15 @@ public class VendaColab extends javax.swing.JFrame {
         });
 
         jLabel22.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel22.setForeground(new java.awt.Color(0, 127, 255));
         jLabel22.setText("*");
 
         jLabel23.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel23.setForeground(new java.awt.Color(0, 127, 255));
         jLabel23.setText("*");
 
         jLabel24.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel24.setForeground(new java.awt.Color(0, 127, 255));
         jLabel24.setText("*");
 
         jLabel49.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -2143,9 +2143,9 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Produto");
 
-        jLabel16.setBackground(new java.awt.Color(204, 204, 0));
+        jLabel16.setBackground(new java.awt.Color(0, 127, 255));
         jLabel16.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel16.setForeground(new java.awt.Color(0, 127, 255));
         jLabel16.setText("Filtrar");
 
         jLabel17.setBackground(new java.awt.Color(204, 204, 0));
@@ -2155,12 +2155,12 @@ public class VendaColab extends javax.swing.JFrame {
 
         jLabel18.setBackground(new java.awt.Color(204, 204, 0));
         jLabel18.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel18.setForeground(new java.awt.Color(0, 127, 255));
         jLabel18.setText("Incluir");
 
         jLabel25.setBackground(new java.awt.Color(204, 204, 0));
         jLabel25.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel25.setForeground(new java.awt.Color(0, 127, 255));
         jLabel25.setText("Excluir");
 
         jLabel26.setBackground(new java.awt.Color(204, 204, 0));
@@ -2178,7 +2178,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel36.setText("Descrição");
 
         jLabel37.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel37.setForeground(new java.awt.Color(0, 127, 255));
         jLabel37.setText("*");
 
         jLabel34.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -2186,7 +2186,7 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel34.setText("Código");
 
         jLabel35.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel35.setForeground(new java.awt.Color(0, 127, 255));
         jLabel35.setText("*");
 
         textoExcluirCodigoProduto.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
@@ -2522,7 +2522,7 @@ public class VendaColab extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel4.setBackground(new java.awt.Color(0, 127, 255));
 
         jLabel7.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 204, 0));
@@ -2614,15 +2614,15 @@ public class VendaColab extends javax.swing.JFrame {
         jLabel3.setText("Relatório");
 
         jLabel4.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel4.setForeground(new java.awt.Color(0, 127, 255));
         jLabel4.setText("Analítico");
 
         jLabel5.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel5.setForeground(new java.awt.Color(0, 127, 255));
         jLabel5.setText("Sintético");
 
-        jPanel7.setBackground(new java.awt.Color(204, 204, 0));
-        jPanel7.setForeground(new java.awt.Color(204, 204, 0));
+        jPanel7.setBackground(new java.awt.Color(0, 127, 255));
+        jPanel7.setForeground(new java.awt.Color(0, 127, 255));
         jPanel7.setPreferredSize(new java.awt.Dimension(800, 1));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);

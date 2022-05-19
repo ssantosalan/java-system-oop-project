@@ -100,7 +100,7 @@
         <Container class="javax.swing.JPanel" name="jPanel11">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
+              <Color blue="ff" green="7f" red="0" type="rgb"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -161,7 +161,7 @@
               <Font name="Tw Cen MT" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="cc" red="cc" type="rgb"/>
+              <Color blue="ff" green="7f" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Alterar"/>
           </Properties>
@@ -172,7 +172,7 @@
               <Font name="Tw Cen MT" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="cc" red="cc" type="rgb"/>
+              <Color blue="ff" green="7f" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Pesquisar"/>
           </Properties>
@@ -249,7 +249,7 @@
                   <Font name="Tw Cen MT" size="18" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="cc" red="cc" type="rgb"/>
+                  <Color blue="ff" green="7f" red="0" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="*"/>
               </Properties>
@@ -375,7 +375,7 @@
                   <Font name="Tw Cen MT" size="18" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="cc" red="cc" type="rgb"/>
+                  <Color blue="ff" green="7f" red="0" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="*"/>
               </Properties>
@@ -397,7 +397,7 @@
                   <Font name="Tw Cen MT" size="18" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="cc" red="cc" type="rgb"/>
+                  <Color blue="ff" green="7f" red="0" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="*"/>
               </Properties>
@@ -419,7 +419,7 @@
                   <Font name="Tw Cen MT" size="18" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="cc" red="cc" type="rgb"/>
+                  <Color blue="ff" green="7f" red="0" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="*"/>
               </Properties>

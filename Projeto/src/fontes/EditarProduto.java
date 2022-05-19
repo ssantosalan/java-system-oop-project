@@ -78,7 +78,7 @@ public class EditarProduto extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
-        jPanel11.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel11.setBackground(new java.awt.Color(0, 127, 255));
         jPanel11.setForeground(new java.awt.Color(0, 0, 0));
         jPanel11.setPreferredSize(new java.awt.Dimension(639, 34));
 
@@ -108,11 +108,11 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel1.setText("Produto");
 
         jLabel2.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel2.setForeground(new java.awt.Color(0, 127, 255));
         jLabel2.setText("Alterar");
 
         jLabel3.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel3.setForeground(new java.awt.Color(0, 127, 255));
         jLabel3.setText("Pesquisar");
 
         jLabel4.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
@@ -128,7 +128,7 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel9.setText("Código");
 
         jLabel22.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel22.setForeground(new java.awt.Color(0, 127, 255));
         jLabel22.setText("*");
 
         textoEditarCodigoProduto.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
@@ -176,7 +176,7 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel10.setText("Descrição");
 
         jLabel23.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel23.setForeground(new java.awt.Color(0, 127, 255));
         jLabel23.setText("*");
 
         jLabel11.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -184,7 +184,7 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel11.setText("Preço");
 
         jLabel24.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel24.setForeground(new java.awt.Color(0, 127, 255));
         jLabel24.setText("*");
 
         jLabel49.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -192,7 +192,7 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel49.setText("Estoque Atual");
 
         jLabel25.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel25.setForeground(new java.awt.Color(0, 127, 255));
         jLabel25.setText("*");
 
         jLabel50.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N

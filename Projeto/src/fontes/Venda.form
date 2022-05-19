@@ -45,10 +45,10 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
+          <Color blue="ff" green="7f" red="0" type="rgb"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
+          <Color blue="ff" green="7f" red="0" type="rgb"/>
         </Property>
       </Properties>
 
@@ -71,7 +71,7 @@
               <Color blue="33" green="33" red="33" type="rgb"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
+              <Color blue="ff" green="7f" red="0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tw Cen MT" size="14" style="0"/>
@@ -86,10 +86,10 @@
             <Container class="javax.swing.JPanel" name="jPanel28">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="33" green="33" red="33" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="33" green="33" red="33" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -194,7 +194,7 @@
                 <Container class="javax.swing.JPanel" name="jPanel16">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="0" green="0" red="0" type="rgb"/>
+                      <Color blue="ff" green="7f" red="0" type="rgb"/>
                     </Property>
                   </Properties>
 
@@ -212,7 +212,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace pref="12" max="32767" attributes="0"/>
-                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel13" min="-2" pref="16" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -221,11 +221,14 @@
                   <SubComponents>
                     <Component class="javax.swing.JLabel" name="jLabel13">
                       <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tw Cen MT" size="14" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="CAIXA"/>
                       </Properties>
@@ -235,7 +238,7 @@
                 <Container class="javax.swing.JPanel" name="jPanel25">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -243,7 +246,7 @@
                       </Border>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[508, 278]"/>
@@ -298,7 +301,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="C&#xf3;digo"/>
                       </Properties>
@@ -316,7 +319,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o"/>
                       </Properties>
@@ -349,7 +352,7 @@
                 <Container class="javax.swing.JPanel" name="jLista">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -357,7 +360,7 @@
                       </Border>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                   </Properties>
 
@@ -418,13 +421,13 @@
                         <Component class="javax.swing.JTable" name="listaProduto">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="33" green="33" red="33" type="rgb"/>
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tw Cen MT" size="14" style="0"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                               <Table columnCount="4" rowCount="0">
@@ -489,7 +492,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="quantidade"/>
                       </Properties>
@@ -537,7 +540,7 @@
                       <Font name="Tw Cen MT" size="18" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="0" green="cc" red="cc" type="rgb"/>
+                      <Color blue="ff" green="7f" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Lista"/>
                   </Properties>
@@ -551,7 +554,7 @@
                       <Font name="Tw Cen MT" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                      <Color blue="ff" green="7f" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Produtos"/>
                   </Properties>
@@ -559,7 +562,7 @@
                 <Container class="javax.swing.JPanel" name="jPanel34">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -567,7 +570,7 @@
                       </Border>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="e6" green="e6" red="e7" type="rgb"/>
                     </Property>
                   </Properties>
 
@@ -605,13 +608,13 @@
                         <Component class="javax.swing.JTable" name="listaCarrinho">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="33" green="33" red="33" type="rgb"/>
+                              <Color blue="cc" green="cc" red="cc" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tw Cen MT" size="14" style="0"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                               <Table columnCount="4" rowCount="0">
@@ -682,7 +685,7 @@
                       <Font name="Tw Cen MT" size="18" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="0" green="cc" red="cc" type="rgb"/>
+                      <Color blue="ff" green="7f" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Carrinho"/>
                   </Properties>
@@ -696,7 +699,7 @@
                       <Font name="Tw Cen MT" size="18" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="0" green="cc" red="cc" type="rgb"/>
+                      <Color blue="ff" green="7f" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Filtrar"/>
                   </Properties>
@@ -710,7 +713,7 @@
                       <Font name="Tw Cen MT" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                      <Color blue="ff" green="7f" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Produtos"/>
                   </Properties>
@@ -718,7 +721,7 @@
                 <Container class="javax.swing.JPanel" name="jPanel33">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -726,7 +729,7 @@
                       </Border>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                   </Properties>
 
@@ -778,7 +781,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Vendedor"/>
                       </Properties>
@@ -806,7 +809,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Cliente"/>
                       </Properties>
@@ -843,7 +846,7 @@
                 <Container class="javax.swing.JPanel" name="jPanel35">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -851,7 +854,7 @@
                       </Border>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                   </Properties>
 
@@ -904,7 +907,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Valor Total"/>
                       </Properties>
@@ -915,7 +918,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
@@ -926,7 +929,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="CPF Cliente"/>
                       </Properties>
@@ -1205,7 +1208,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -1227,7 +1230,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -1319,7 +1322,7 @@
                     <Container class="javax.swing.JPanel" name="jPanel20">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -1356,7 +1359,7 @@
                               <Font name="Tw Cen MT" size="14" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="CLIENTE"/>
                           </Properties>
@@ -1372,7 +1375,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Incluir"/>
                       </Properties>
@@ -1400,7 +1403,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Excluir"/>
                       </Properties>
@@ -1528,7 +1531,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -1594,7 +1597,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -1616,7 +1619,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -1632,7 +1635,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Filtrar"/>
                       </Properties>
@@ -1979,7 +1982,7 @@
                     <Container class="javax.swing.JPanel" name="jPanel24">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2016,7 +2019,7 @@
                               <Font name="Tw Cen MT" size="14" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="VENDEDOR"/>
                           </Properties>
@@ -2032,7 +2035,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Incluir"/>
                       </Properties>
@@ -2263,7 +2266,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -2338,7 +2341,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -2349,7 +2352,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -2360,7 +2363,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -2371,7 +2374,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -2387,7 +2390,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Excluir"/>
                       </Properties>
@@ -2491,7 +2494,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -2513,7 +2516,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -2563,7 +2566,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Filtrar"/>
                       </Properties>
@@ -2886,7 +2889,7 @@
                     <Container class="javax.swing.JPanel" name="jPanel11">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2923,7 +2926,7 @@
                               <Font name="Tw Cen MT" size="14" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="PRODUTO"/>
                           </Properties>
@@ -3103,7 +3106,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -3114,7 +3117,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -3125,7 +3128,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -3387,7 +3390,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Filtrar"/>
                       </Properties>
@@ -3415,7 +3418,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Incluir"/>
                       </Properties>
@@ -3429,7 +3432,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Excluir"/>
                       </Properties>
@@ -3533,7 +3536,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -3555,7 +3558,7 @@
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="7f" red="0" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="*"/>
                           </Properties>
@@ -3673,7 +3676,7 @@
                               <Component id="jPanel5" min="-2" pref="110" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3974,7 +3977,7 @@
                     <Container class="javax.swing.JPanel" name="jPanel4">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                       </Properties>
 
@@ -4005,7 +4008,7 @@
                               <Font name="Tw Cen MT" size="14" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="0" green="cc" red="cc" type="rgb"/>
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="RELAT&#xd3;RIO"/>
                           </Properties>
@@ -4134,7 +4137,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Anal&#xed;tico"/>
                       </Properties>
@@ -4145,7 +4148,7 @@
                           <Font name="Tw Cen MT" size="18" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Sint&#xe9;tico"/>
                       </Properties>
@@ -4153,10 +4156,10 @@
                     <Container class="javax.swing.JPanel" name="jPanel7">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="cc" red="cc" type="rgb"/>
+                          <Color blue="ff" green="7f" red="0" type="rgb"/>
                         </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[800, 1]"/>
