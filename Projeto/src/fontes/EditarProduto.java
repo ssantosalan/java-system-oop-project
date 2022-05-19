@@ -74,7 +74,7 @@ public class EditarProduto extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
@@ -83,7 +83,7 @@ public class EditarProduto extends javax.swing.JFrame {
         jPanel11.setPreferredSize(new java.awt.Dimension(639, 34));
 
         jLabel14.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("EDITAR PRODUTO");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
@@ -104,7 +104,7 @@ public class EditarProduto extends javax.swing.JFrame {
         );
 
         jLabel1.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(171, 169, 169));
         jLabel1.setText("Produto");
 
         jLabel2.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -116,15 +116,15 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel3.setText("Pesquisar");
 
         jLabel4.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(171, 169, 169));
         jLabel4.setText("Produto");
 
-        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel9.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Código");
 
         jLabel22.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -167,36 +167,36 @@ public class EditarProduto extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
-        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel3.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel10.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Descrição");
 
         jLabel23.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(0, 127, 255));
         jLabel23.setText("*");
 
-        jLabel11.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Preço");
 
         jLabel24.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(0, 127, 255));
         jLabel24.setText("*");
 
-        jLabel49.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel49.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(0, 0, 0));
         jLabel49.setText("Estoque Atual");
 
         jLabel25.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(0, 127, 255));
         jLabel25.setText("*");
 
-        jLabel50.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel50.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(0, 0, 0));
         jLabel50.setText("Adicionar Estoque");
 
         textoEditarEstoqueProduto.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
@@ -316,7 +316,7 @@ public class EditarProduto extends javax.swing.JFrame {
                         .addComponent(jLabel4))
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
