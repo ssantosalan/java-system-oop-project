@@ -1195,7 +1195,7 @@ public class VendaColab extends javax.swing.JFrame {
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
-        jPanel23.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel23.setBackground(new java.awt.Color(255, 255, 255));
         jPanel23.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel23.setForeground(new java.awt.Color(51, 51, 51));
 
@@ -1720,7 +1720,7 @@ public class VendaColab extends javax.swing.JFrame {
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
-        jPanel32.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel32.setBackground(new java.awt.Color(255, 255, 255));
         jPanel32.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel32.setForeground(new java.awt.Color(51, 51, 51));
 
@@ -2077,7 +2077,7 @@ public class VendaColab extends javax.swing.JFrame {
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
-        jPanel14.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
         jPanel14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel14.setForeground(new java.awt.Color(51, 51, 51));
 
