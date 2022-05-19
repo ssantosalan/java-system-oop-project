@@ -3,16 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fontes;
+package naousar;
 
-import static fontes.VendaColaborador.labelVendedor;
+import fontes.EditarProduto;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
@@ -23,9 +22,11 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Alan
  */
-public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
+public class VendaColaboradorNAOUSAR extends javax.swing.JFrame {
 
     int linha = 0;
+    
+    
 
     /**
      * Creates new form Venda
@@ -39,7 +40,7 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
     PreparedStatement pst = null;
     ResultSet rs = null;
 
-    public VendaColaboradorFinalNAOUSAR() {
+    public VendaColaboradorNAOUSAR() {
         initComponents();
         this.setLocationRelativeTo(null);
         try {
@@ -82,7 +83,7 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         textoQuantidadeProduto = new javax.swing.JTextField();
         jLabel72 = new javax.swing.JLabel();
         botaoAdicionarProdutoCaixa = new javax.swing.JButton();
-        botaoListarProdutoVendaTeste = new javax.swing.JButton();
+        botaoListarProdutoVenda = new javax.swing.JButton();
         jLabel64 = new javax.swing.JLabel();
         jLabel68 = new javax.swing.JLabel();
         jPanel34 = new javax.swing.JPanel();
@@ -242,36 +243,31 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jnumeroPedido = new javax.swing.JTextField();
-        jnomeCliente = new javax.swing.JTextField();
-        jdataInicial = new com.toedter.calendar.JDateChooser();
-        jdataFinal = new com.toedter.calendar.JDateChooser();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
+        textoDataInicialRelatorio = new javax.swing.JTextField();
+        textoDataFinalRelatorio = new javax.swing.JTextField();
         botaoGerarRelatorio = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jPanel6 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tabelaRelatorioAnalitico = new javax.swing.JTable();
+        tabelaRelatorioSintetico = new javax.swing.JTable();
+        textoTotalRelatorio = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        tabelaRelatorioSintetico = new javax.swing.JTable();
+        tabelaRelatorioAnalitico = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
-        RBD = new javax.swing.JRadioButton();
-        RBM = new javax.swing.JRadioButton();
-        RBA = new javax.swing.JRadioButton();
-        jdataInicial2 = new com.toedter.calendar.JDateChooser();
-        jdataFinal2 = new com.toedter.calendar.JDateChooser();
-        jLabel12 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        botaoGerarRelatorio2 = new javax.swing.JButton();
+        botaoGerarRelatorio1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Nova Black");
@@ -436,20 +432,20 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
             }
         });
 
-        botaoListarProdutoVendaTeste.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
-        botaoListarProdutoVendaTeste.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/list.png"))); // NOI18N
-        botaoListarProdutoVendaTeste.setText("Listar Produtos");
-        botaoListarProdutoVendaTeste.addMouseListener(new java.awt.event.MouseAdapter() {
+        botaoListarProdutoVenda.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
+        botaoListarProdutoVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/list.png"))); // NOI18N
+        botaoListarProdutoVenda.setText("Listar Produtos");
+        botaoListarProdutoVenda.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                botaoListarProdutoVendaTesteMouseEntered(evt);
+                botaoListarProdutoVendaMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                botaoListarProdutoVendaTesteMouseExited(evt);
+                botaoListarProdutoVendaMouseExited(evt);
             }
         });
-        botaoListarProdutoVendaTeste.addActionListener(new java.awt.event.ActionListener() {
+        botaoListarProdutoVenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoListarProdutoVendaTesteActionPerformed(evt);
+                botaoListarProdutoVendaActionPerformed(evt);
             }
         });
 
@@ -471,7 +467,7 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
                                 .addComponent(jLabel72)
                                 .addGap(18, 18, 18)
                                 .addComponent(textoQuantidadeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(botaoListarProdutoVendaTeste, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(botaoListarProdutoVenda, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
         jListaLayout.setVerticalGroup(
@@ -480,7 +476,7 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
                 .addContainerGap(16, Short.MAX_VALUE)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(botaoListarProdutoVendaTeste)
+                .addComponent(botaoListarProdutoVenda)
                 .addGap(18, 18, 18)
                 .addGroup(jListaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel71)
@@ -1426,11 +1422,6 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
                 botaoAcessoGerenteVendedorMouseClicked(evt);
             }
         });
-        botaoAcessoGerenteVendedor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoAcessoGerenteVendedorActionPerformed(evt);
-            }
-        });
 
         jLabel28.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
@@ -1729,16 +1720,6 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         tabelaFiltrarVendedor.setForeground(new java.awt.Color(204, 204, 0));
         tabelaFiltrarVendedor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
@@ -2095,16 +2076,6 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
                 {null, null, null, null}
             },
             new String [] {
@@ -2332,39 +2303,15 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Data Inicial");
+        jLabel1.setText("Pedido de Venda");
 
         jLabel8.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Pedido de Venda");
+        jLabel8.setText("Data Final");
 
-        jnumeroPedido.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        jnumeroPedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jnumeroPedidoActionPerformed(evt);
-            }
-        });
+        textoDataInicialRelatorio.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
 
-        jnomeCliente.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-
-        jdataInicial.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jdataInicialMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jdataInicialMouseExited(evt);
-            }
-        });
-
-        jdataFinal.setForeground(new java.awt.Color(51, 51, 51));
-
-        jLabel21.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("Data Final");
-
-        jLabel30.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel30.setText("Nome do Cliente");
+        textoDataFinalRelatorio.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
 
         botaoGerarRelatorio.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
         botaoGerarRelatorio.setText("Gerar relatório");
@@ -2376,105 +2323,106 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
                 botaoGerarRelatorioMouseExited(evt);
             }
         });
-        botaoGerarRelatorio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoGerarRelatorioActionPerformed(evt);
-            }
-        });
+
+        jLabel12.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Data Inicial");
+
+        jLabel21.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("Pedido de Venda");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(35, 35, 35)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jnumeroPedido, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
-                    .addComponent(jdataInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
+                    .addComponent(jLabel21)
+                    .addComponent(jLabel12))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(textoDataInicialRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(153, 153, 153)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addGap(67, 67, 67))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel30)
-                        .addGap(18, 18, 18)))
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jnomeCliente)
-                    .addComponent(jdataFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(botaoGerarRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(165, 165, 165))
+                        .addComponent(jLabel8)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addComponent(textoDataFinalRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(botaoGerarRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(61, 61, 61))))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jnomeCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jnumeroPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel30)
-                    .addComponent(botaoGerarRelatorio))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jdataInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel21)
-                        .addComponent(jdataFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(7, 7, 7))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addComponent(botaoGerarRelatorio)
+                        .addGap(27, 27, 27))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(textoDataInicialRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(textoDataFinalRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jDateChooser1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
         );
 
         jPanel6.setBackground(new java.awt.Color(51, 51, 51));
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel6.setForeground(new java.awt.Color(51, 51, 51));
 
-        tabelaRelatorioAnalitico.setBackground(new java.awt.Color(51, 51, 51));
-        tabelaRelatorioAnalitico.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        tabelaRelatorioAnalitico.setForeground(new java.awt.Color(204, 204, 0));
-        tabelaRelatorioAnalitico.setModel(new javax.swing.table.DefaultTableModel(
+        jLabel6.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Total:");
+
+        tabelaRelatorioSintetico.setBackground(new java.awt.Color(51, 51, 51));
+        tabelaRelatorioSintetico.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
+        tabelaRelatorioSintetico.setForeground(new java.awt.Color(204, 204, 0));
+        tabelaRelatorioSintetico.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "N° Pedido", "Produto", "Quantidade comprada", "Valor total", "Cliente", "Data"
+                "N° Vendas", "Data da Venda", "Cliente", "Total"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, true, true
+                false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
-        tabelaRelatorioAnalitico.setGridColor(new java.awt.Color(51, 51, 51));
-        tabelaRelatorioAnalitico.setSelectionForeground(new java.awt.Color(51, 51, 51));
-        jScrollPane1.setViewportView(tabelaRelatorioAnalitico);
+        tabelaRelatorioSintetico.setGridColor(new java.awt.Color(51, 51, 51));
+        tabelaRelatorioSintetico.setSelectionForeground(new java.awt.Color(51, 51, 51));
+        jScrollPane1.setViewportView(tabelaRelatorioSintetico);
+
+        textoTotalRelatorio.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
+        textoTotalRelatorio.setForeground(new java.awt.Color(204, 204, 0));
+        textoTotalRelatorio.setText("RS 0.00");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -2482,13 +2430,23 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(textoTotalRelatorio)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(textoTotalRelatorio))
                 .addContainerGap())
         );
 
@@ -2523,45 +2481,35 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         jPanel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel8.setForeground(new java.awt.Color(51, 51, 51));
 
-        tabelaRelatorioSintetico.setBackground(new java.awt.Color(51, 51, 51));
-        tabelaRelatorioSintetico.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        tabelaRelatorioSintetico.setForeground(new java.awt.Color(204, 204, 0));
-        tabelaRelatorioSintetico.setModel(new javax.swing.table.DefaultTableModel(
+        tabelaRelatorioAnalitico.setBackground(new java.awt.Color(51, 51, 51));
+        tabelaRelatorioAnalitico.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
+        tabelaRelatorioAnalitico.setForeground(new java.awt.Color(204, 204, 0));
+        tabelaRelatorioAnalitico.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Dia", "Mês", "Ano", "Valor total"
+                "Código Produto", "Quantidade", "Produto", "Valor Unitário", "Sub Total"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(tabelaRelatorioSintetico);
+        jScrollPane2.setViewportView(tabelaRelatorioAnalitico);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -2573,10 +2521,10 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(54, 54, 54))
         );
 
         jLabel3.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
@@ -2585,11 +2533,11 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 204, 0));
-        jLabel4.setText("Analítico");
+        jLabel4.setText("Sintético");
 
         jLabel5.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(204, 204, 0));
-        jLabel5.setText("Sintético");
+        jLabel5.setText("Analítico");
 
         jPanel7.setBackground(new java.awt.Color(204, 204, 0));
         jPanel7.setForeground(new java.awt.Color(204, 204, 0));
@@ -2607,67 +2555,24 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         );
 
         jPanel15.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel15.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel15.setForeground(new java.awt.Color(51, 51, 51));
 
-        RBD.setBackground(new java.awt.Color(51, 51, 51));
-        buttonGroup1.add(RBD);
-        RBD.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
-        RBD.setForeground(new java.awt.Color(255, 255, 255));
-        RBD.setText("Dia");
-        RBD.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RBDActionPerformed(evt);
-            }
-        });
-
-        RBM.setBackground(new java.awt.Color(51, 51, 51));
-        buttonGroup1.add(RBM);
-        RBM.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
-        RBM.setForeground(new java.awt.Color(255, 255, 255));
-        RBM.setText("Mês");
-        RBM.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RBMActionPerformed(evt);
-            }
-        });
-
-        RBA.setBackground(new java.awt.Color(51, 51, 51));
-        buttonGroup1.add(RBA);
-        RBA.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
-        RBA.setForeground(new java.awt.Color(255, 255, 255));
-        RBA.setText("Ano");
-        RBA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RBAActionPerformed(evt);
-            }
-        });
-
-        jLabel12.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Data Inicial");
+        jLabel30.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("Data Inicial");
 
         jLabel31.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setText("Data Final");
 
-        jLabel6.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Gerar relatório por: ");
-
-        botaoGerarRelatorio2.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
-        botaoGerarRelatorio2.setText("Gerar relatório");
-        botaoGerarRelatorio2.addMouseListener(new java.awt.event.MouseAdapter() {
+        botaoGerarRelatorio1.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
+        botaoGerarRelatorio1.setText("Gerar relatório");
+        botaoGerarRelatorio1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                botaoGerarRelatorio2MouseEntered(evt);
+                botaoGerarRelatorio1MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                botaoGerarRelatorio2MouseExited(evt);
-            }
-        });
-        botaoGerarRelatorio2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoGerarRelatorio2ActionPerformed(evt);
+                botaoGerarRelatorio1MouseExited(evt);
             }
         });
 
@@ -2677,46 +2582,24 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel12))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(RBD)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(RBM)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(RBA)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(jdataInicial2, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel31)
-                        .addGap(59, 59, 59)
-                        .addComponent(jdataFinal2, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(botaoGerarRelatorio2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(158, 158, 158))))
+                .addComponent(jLabel30)
+                .addGap(394, 394, 394)
+                .addComponent(jLabel31)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(botaoGerarRelatorio1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
+            .addGroup(jPanel15Layout.createSequentialGroup()
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel31, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jdataFinal2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botaoGerarRelatorio2, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jdataInicial2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(29, 29, 29)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(RBD)
-                    .addComponent(RBM)
-                    .addComponent(RBA))
-                .addGap(36, 36, 36))
+                    .addComponent(jLabel31)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel30)
+                            .addComponent(botaoGerarRelatorio1))))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -2726,22 +2609,22 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
             .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1223, Short.MAX_VALUE)
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel4))
-                            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 1210, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel5)))
+                                .addComponent(jLabel5))
+                            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 1210, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 1, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -2750,23 +2633,24 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(13, 13, 13)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -2926,11 +2810,11 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
 
             if (codigo.equals("") && !nome.equals("") && !cpf.equals("")) {
                 String minhaSQL = "insert into cliente(nome,cpf,telefone,email) values('" + nome + "','" + cpf + "','" + telefone + "','" + email + "');";
-                JOptionPane.showMessageDialog(null, "Registro gravado");
+                JOptionPane.showMessageDialog(null, "Registro gravado!");
                 st.executeUpdate(minhaSQL);
             } else if (!codigo.equals("") && !nome.equals("") && !cpf.equals("")) {
                 String minhaSQL = "insert into cliente(id_cliente,nome,cpf,telefone,email) values('" + codigo + "','" + nome + "','" + cpf + "','" + telefone + "','" + email + "');";
-                JOptionPane.showMessageDialog(null, "Registro gravado com id");
+                JOptionPane.showMessageDialog(null, "Registro gravado!");
                 st.executeUpdate(minhaSQL);
             } else {
                 JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
@@ -3074,6 +2958,11 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         botaoPesquisarVendedor.setBackground(Color.LIGHT_GRAY);
     }//GEN-LAST:event_botaoPesquisarVendedorMouseExited
 
+    private void botaoGerarRelatorioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorioMouseEntered
+        // TODO add your handling code here:
+        botaoGerarRelatorio.setBackground(Color.yellow);
+    }//GEN-LAST:event_botaoGerarRelatorioMouseEntered
+
     private void botaoFinalizarVendaCaixaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoFinalizarVendaCaixaMouseExited
         // TODO add your handling code here:
         botaoFinalizarVendaCaixa.setBackground(Color.LIGHT_GRAY);
@@ -3144,6 +3033,11 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         // TODO add your handling code here:
         botaoPesquisarProdutoCaixa.setBackground(Color.yellow);
     }//GEN-LAST:event_botaoPesquisarProdutoCaixaMouseEntered
+
+    private void botaoGerarRelatorioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorioMouseExited
+        // TODO add your handling code here:
+        botaoGerarRelatorio.setBackground(Color.LIGHT_GRAY);
+    }//GEN-LAST:event_botaoGerarRelatorioMouseExited
 
     private void botaoPesquisarVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPesquisarVendedorActionPerformed
         // TODO add your handling code here:
@@ -3556,7 +3450,7 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
             if (resultado.next()) {
                 JOptionPane.showMessageDialog(null, "Registro encontrado");
 
-                textoExcluirDescricaoProduto.setText(resultado.getString("descricao_prod"));
+                textoExcluirDescricaoProduto.setText(resultado.getString("nome_produto"));
             } else {
                 JOptionPane.showMessageDialog(null, "Registro não encontrado");
                 textoExcluirDescricaoProduto.setText("");
@@ -3632,15 +3526,15 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textoCodigoProdutoActionPerformed
 
-    private void botaoListarProdutoVendaTesteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoListarProdutoVendaTesteMouseEntered
-        botaoListarProdutoVendaTeste.setBackground(Color.yellow);
-    }//GEN-LAST:event_botaoListarProdutoVendaTesteMouseEntered
+    private void botaoListarProdutoVendaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoListarProdutoVendaMouseEntered
+        botaoListarProdutoVenda.setBackground(Color.yellow);
+    }//GEN-LAST:event_botaoListarProdutoVendaMouseEntered
 
-    private void botaoListarProdutoVendaTesteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoListarProdutoVendaTesteMouseExited
-        botaoListarProdutoVendaTeste.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_botaoListarProdutoVendaTesteMouseExited
+    private void botaoListarProdutoVendaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoListarProdutoVendaMouseExited
+        botaoListarProdutoVenda.setBackground(Color.LIGHT_GRAY);
+    }//GEN-LAST:event_botaoListarProdutoVendaMouseExited
 
-    private void botaoListarProdutoVendaTesteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoListarProdutoVendaTesteActionPerformed
+    private void botaoListarProdutoVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoListarProdutoVendaActionPerformed
         try {
             String produtos = "Select * from estoque";
             PreparedStatement stmt = con.prepareStatement(produtos);
@@ -3656,7 +3550,7 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         } catch (Exception e) {
         }
 
-    }//GEN-LAST:event_botaoListarProdutoVendaTesteActionPerformed
+    }//GEN-LAST:event_botaoListarProdutoVendaActionPerformed
 
     private void botaoRemoverProdutoCaixa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoRemoverProdutoCaixa1ActionPerformed
 
@@ -3796,260 +3690,13 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         jDate.setText(data.format(DateTimeFormatter.ISO_DATE));
     }//GEN-LAST:event_formWindowOpened
 
-    private void jnumeroPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jnumeroPedidoActionPerformed
+    private void botaoGerarRelatorio1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorio1MouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_jnumeroPedidoActionPerformed
+    }//GEN-LAST:event_botaoGerarRelatorio1MouseEntered
 
-    private void botaoGerarRelatorio2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorio2MouseEntered
-        botaoGerarRelatorio2.setBackground(Color.yellow);
-    }//GEN-LAST:event_botaoGerarRelatorio2MouseEntered
-
-    private void botaoGerarRelatorio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorio2MouseExited
-        botaoGerarRelatorio2.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_botaoGerarRelatorio2MouseExited
-
-    private void RBDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBDActionPerformed
-        RBD.setForeground(Color.yellow);
-        RBD.setBackground(Color.yellow);
-        RBM.setForeground(Color.gray);
-        RBM.setBackground(Color.gray);
-        RBA.setForeground(Color.gray);
-        RBA.setBackground(Color.gray);
-    }//GEN-LAST:event_RBDActionPerformed
-
-    private void botaoGerarRelatorioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorioMouseEntered
-        botaoGerarRelatorio.setBackground(Color.yellow);
-    }//GEN-LAST:event_botaoGerarRelatorioMouseEntered
-
-    private void botaoGerarRelatorioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorioMouseExited
-        botaoGerarRelatorio.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_botaoGerarRelatorioMouseExited
-
-    private void botaoGerarRelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoGerarRelatorioActionPerformed
-        
-        String numeroPedido, nomeCli, dataI, dataF;
-        int linha = 0;
-        numeroPedido = jnumeroPedido.getText();
-        nomeCli = jnomeCliente.getText();
-        dataI = jdataInicial.getDateFormatString();
-        dataF = jdataFinal.getDateFormatString();
- 
-        String minhasql;
-
-        try {
-
-            do {
-                tabelaRelatorioAnalitico.setValueAt("", linha, 0);
-                tabelaRelatorioAnalitico.setValueAt("", linha, 1);
-                tabelaRelatorioAnalitico.setValueAt("", linha, 2);
-                tabelaRelatorioAnalitico.setValueAt("", linha, 3);
-                tabelaRelatorioAnalitico.setValueAt("", linha, 4);
-                tabelaRelatorioAnalitico.setValueAt("", linha, 5);
-                linha++;
-            } while (linha < 20);
-            linha = 0;
-            
-            
-            if (!jnumeroPedido.getText().equals("") ){                
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente as C\n" +
-                "where PV.numero_pedido = '"+numeroPedido+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
-                resultado = st.executeQuery(minhasql);
-
-                while (resultado.next()) {
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
-                    linha++;
-                }
-
-            } else if (!jnomeCliente.getText().equals("") && !dataI.equals("") && !dataF.equals("")) {
-                 SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
-                 String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
-                 String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
-                 
-                minhasql ="select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n" +
-                "cliente as C inner join \n" +
-                "estoque as E\n" +
-                "where C.nome like '"+nomeCli+"%' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto && data_venda between '"+dataFormatadaInicio+"' and '"+dataFormatadaFinal+"';"; 
-                             
-                resultado = st.executeQuery(minhasql);
-
-                while (resultado.next()){
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
-                    linha++;
-                }
-                
-            } else if (!jnomeCliente.getText().equals("")) {
-                JOptionPane.showMessageDialog(null, "ENTROU!");
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n" +
-                "cliente as C inner join \n" +
-                "estoque as E\n" +
-                "where C.nome like '"+nomeCli+"%'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
-                resultado = st.executeQuery(minhasql);
-                 
-                while (resultado.next()){
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
-                    linha++;
-                }
-       
-            } else if (!dataI.equals("") && !dataF.equals("")) {
-
-                    SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
-                    String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
-                    String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
-
-                    minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n" +
-                    "inner join estoque as E\n" +
-                    "inner join cliente as C \n" +
-                    "WHERE data_venda between '"+dataFormatadaInicio+"' and '"+dataFormatadaFinal+"'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
-                    resultado = st.executeQuery(minhasql);
-
-                    while (resultado.next()){
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
-                        linha++;
-                    }
-                }
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Registro não encontrado!");
-        }
- 
-        
-    }//GEN-LAST:event_botaoGerarRelatorioActionPerformed
-
-    private void botaoAcessoGerenteVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAcessoGerenteVendedorActionPerformed
+    private void botaoGerarRelatorio1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGerarRelatorio1MouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_botaoAcessoGerenteVendedorActionPerformed
-
-    private void RBMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBMActionPerformed
-        RBM.setForeground(Color.yellow);
-        RBM.setBackground(Color.yellow);
-        RBD.setForeground(Color.gray);
-        RBD.setBackground(Color.gray);
-        RBA.setForeground(Color.gray);
-        RBA.setBackground(Color.gray);
-    }//GEN-LAST:event_RBMActionPerformed
-
-    private void RBAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBAActionPerformed
-        RBA.setForeground(Color.yellow);
-        RBA.setBackground(Color.yellow);
-        RBM.setForeground(Color.gray);
-        RBM.setBackground(Color.gray);
-        RBD.setForeground(Color.gray);
-        RBD.setBackground(Color.gray);
-    }//GEN-LAST:event_RBAActionPerformed
-
-    private void botaoGerarRelatorio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoGerarRelatorio2ActionPerformed
-        
-        String dataI2, dataF2;
-        int linha = 0;        
-        dataI2 = jdataInicial2.getDateFormatString();
-        dataF2 = jdataFinal2.getDateFormatString();
-        
-        SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("yyyy/MM/dd");
-        String dataFormatadaI2 = simpleDateFormat2.format(jdataInicial2.getDate());
-        String dataFormatadaF2 = simpleDateFormat2.format(jdataFinal2.getDate());
-        
-        String minhasql;
-
-        try {
-
-            do {                
-                tabelaRelatorioSintetico.setValueAt("", linha, 0);
-                tabelaRelatorioSintetico.setValueAt("", linha, 1);
-                tabelaRelatorioSintetico.setValueAt("", linha, 2);
-                tabelaRelatorioSintetico.setValueAt("", linha, 3);
-                             
-                linha++;
-            } while (linha < 20);
-            linha = 0;
-            
-             if (RBD.isSelected()){
-                 
-                minhasql = "select year(PV.data_venda) as ano, month(PV.data_venda) as mes, day(PV.data_venda) as dia, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente as C\n" +
-                "WHERE data_venda between  '"+dataFormatadaI2+"'  and '"+dataFormatadaF2+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by data_venda;";
-                resultado = st.executeQuery(minhasql);
-
-                while (resultado.next()){
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("dia"), linha, 0);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("mes"), linha, 1);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("ano"), linha, 2);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);                                     
-                    linha++;
-                }
-
-            } else if (RBM.isSelected()){
-                
-                minhasql = "select year(PV.data_venda) as ano, month(PV.data_venda) as mes, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente as C\n" +
-                "WHERE data_venda between  '"+dataFormatadaI2+"'  and '"+dataFormatadaF2+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by month(data_venda);";                 
-                resultado = st.executeQuery(minhasql);
-                 
-                while (resultado.next()){
-                    tabelaRelatorioSintetico.setValueAt("", linha, 0);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("mes"), linha, 1);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("ano"), linha, 2);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);                                       
-                    linha++;
-                }
-
-            } else if (RBA.isSelected()) {
-                
-                minhasql = "select  year(PV.data_venda) as ano, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente  as C\n" +
-                "WHERE data_venda between  '"+dataFormatadaI2+"'  and '"+dataFormatadaF2+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by year(data_venda);";
-                resultado = st.executeQuery(minhasql);
-
-                while (resultado.next()){
-                    tabelaRelatorioSintetico.setValueAt("", linha, 0);
-                    tabelaRelatorioSintetico.setValueAt("", linha, 1);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("ano"), linha, 2);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);                                     
-                    linha++;
-                }
-
-            } else {
-                JOptionPane.showMessageDialog(null, "Selecione um tipo de relatório: dia, mês ou ano.");           
-            }
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Registro não encontrado!");
-        }
-        
-        
-    }//GEN-LAST:event_botaoGerarRelatorio2ActionPerformed
-
-    private void jdataInicialMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jdataInicialMouseEntered
-        jdataInicial.setBackground(Color.yellow);
-    }//GEN-LAST:event_jdataInicialMouseEntered
-
-    private void jdataInicialMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jdataInicialMouseExited
-        jdataInicial.setBackground(Color.LIGHT_GRAY);
-    }//GEN-LAST:event_jdataInicialMouseExited
+    }//GEN-LAST:event_botaoGerarRelatorio1MouseExited
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -4065,13 +3712,13 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VendaColaboradorFinalNAOUSAR.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendaColaboradorNAOUSAR.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VendaColaboradorFinalNAOUSAR.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendaColaboradorNAOUSAR.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VendaColaboradorFinalNAOUSAR.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendaColaboradorNAOUSAR.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VendaColaboradorFinalNAOUSAR.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendaColaboradorNAOUSAR.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -4081,15 +3728,12 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VendaColaboradorFinalNAOUSAR().setVisible(true);
+                new VendaColaboradorNAOUSAR().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton RBA;
-    private javax.swing.JRadioButton RBD;
-    private javax.swing.JRadioButton RBM;
     public static javax.swing.JTabbedPane abaProduto1;
     private javax.swing.JRadioButton botaoAcessoColaboradorVendedor;
     private javax.swing.JRadioButton botaoAcessoGerenteVendedor;
@@ -4104,8 +3748,8 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
     private javax.swing.JButton botaoExcluirVendedor;
     private javax.swing.JButton botaoFinalizarVendaCaixa;
     private javax.swing.JButton botaoGerarRelatorio;
-    private javax.swing.JButton botaoGerarRelatorio2;
-    private javax.swing.JButton botaoListarProdutoVendaTeste;
+    private javax.swing.JButton botaoGerarRelatorio1;
+    private javax.swing.JButton botaoListarProdutoVenda;
     private javax.swing.JButton botaoPesquisarCliente;
     private javax.swing.JButton botaoPesquisarProduto;
     private javax.swing.JButton botaoPesquisarProdutoCaixa;
@@ -4113,6 +3757,7 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
     private javax.swing.JButton botaoRemoverProdutoCaixa1;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jDate;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
@@ -4248,12 +3893,6 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private com.toedter.calendar.JDateChooser jdataFinal;
-    private com.toedter.calendar.JDateChooser jdataFinal2;
-    private com.toedter.calendar.JDateChooser jdataInicial;
-    private com.toedter.calendar.JDateChooser jdataInicial2;
-    private javax.swing.JTextField jnomeCliente;
-    private javax.swing.JTextField jnumeroPedido;
     private javax.swing.JLabel labelCliente;
     private javax.swing.JLabel labelTotal;
     public static javax.swing.JLabel labelVendedor;
@@ -4271,6 +3910,8 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
     private javax.swing.JTextField textoCodigoProdutoCaixa;
     private javax.swing.JTextField textoCodigoVendedor;
     private javax.swing.JPasswordField textoConfirmarSenhaVendedor;
+    private javax.swing.JTextField textoDataFinalRelatorio;
+    private javax.swing.JTextField textoDataInicialRelatorio;
     private javax.swing.JTextField textoDescricaoProduto;
     private javax.swing.JTextField textoDescricaoProdutoCaixa;
     private javax.swing.JTextField textoEmailCliente;
@@ -4296,5 +3937,6 @@ public class VendaColaboradorFinalNAOUSAR extends javax.swing.JFrame {
     private javax.swing.JTextField textoQuantidadeProduto;
     private javax.swing.JPasswordField textoSenhaVendedor;
     private javax.swing.JTextField textoTelefoneCliente;
+    private javax.swing.JLabel textoTotalRelatorio;
     // End of variables declaration//GEN-END:variables
 }

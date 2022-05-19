@@ -5,7 +5,7 @@
  */
 package fontes;
 
-import static fontes.VendaColaborador.labelVendedor;
+import static naousar.VendaColaboradorNAOUSAR.labelVendedor;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;
