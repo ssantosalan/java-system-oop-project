@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Alan
+ * @author Alan TESTOU
  */
 public class Venda extends javax.swing.JFrame {
 
