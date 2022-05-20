@@ -43,9 +43,9 @@ public class Venda extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         try {
-            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "admin");
+            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) conexao.createStatement();
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "admin");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) con.createStatement();
             JOptionPane.showMessageDialog(null, "Conectado!");
         } catch (Exception e) {

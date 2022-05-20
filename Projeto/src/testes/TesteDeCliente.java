@@ -20,11 +20,12 @@ public class TesteDeCliente {
 //        cliente.setEmail("alan.santos@novablues.com.br");
         cliente.setId(2);
 
-        
+       
         ClienteDAO clienteDAO = new ClienteDAO();
         
 //        clienteDAO.cadastrarCliente(cliente);
 
-        clienteDAO.excluirCliente(cliente);
+//        clienteDAO.excluirCliente(cliente);
+          System.out.println(clienteDAO.procurarPorId(2));
     }
 }
