@@ -223,6 +223,7 @@ pom.xml.tag
 # Database Connection
 MyDatabaseConnection.java
 
-ConnectionFactory.java
+.ConnectionFactory.java
 ConnectionFactory
 br.com.novablues.connection/ConnectionFactory.java
+Projeto/src/br/com/novablues/connection/ConnectionFactory.java
