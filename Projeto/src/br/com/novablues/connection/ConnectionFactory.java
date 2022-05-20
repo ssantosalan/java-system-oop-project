@@ -13,7 +13,7 @@ import java.sql.DriverManager;
  */
 public class ConnectionFactory {
 
-    private static final String USERNAME = "root";
+    private static final String USERNAME = "roots";
     private static final String PASSWORD = ""; // Lembrar de colocar em branco para os demais;
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/projetointegrador_terceiro";
 
