@@ -26,6 +26,6 @@ public class TesteDeCliente {
 //        clienteDAO.cadastrarCliente(cliente);
 
 //        clienteDAO.excluirCliente(cliente);
-          System.out.println(clienteDAO.procurarPorId(2));
+          System.out.println(clienteDAO.procurarPorId(3));
     }
 }
