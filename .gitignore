@@ -221,6 +221,7 @@ pom.xml.tag
 *.vsix
 
 # Database Connection
+ProjetoNovaBlack/src/br/com/novablues/connection/ConnectionFactory.java
 MyDatabaseConnection.java
 .*ConnectionFactory
 ConnectionFactory
