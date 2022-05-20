@@ -114,7 +114,7 @@ public class ClienteDAO {
         }
         return cliente;
     }
-    
+
     public List<Cliente> procurarPorNome(String nome) {
         ArrayList<Cliente> clienteList = new ArrayList();
         String sql = "select * from cliente where nome like ?";
@@ -152,7 +152,7 @@ public class ClienteDAO {
         }
         return clienteList;
     }
-    
+
     public List<Cliente> procurarPorCPF(String CPF) {
         ArrayList<Cliente> clienteList = new ArrayList();
         String sql = "select * from cliente where CPF like ?";
@@ -190,7 +190,7 @@ public class ClienteDAO {
         }
         return clienteList;
     }
-    
+
     public List<Cliente> procurarPorNomeOuIdOuCPF(String nome, String Id, String CPF) {
         ArrayList<Cliente> clienteList = new ArrayList();
         String sql = "select * from cliente where nome like ? or id_cliente like ? or CPF like ?";
@@ -201,9 +201,9 @@ public class ClienteDAO {
         try {
             conn = ConnectionFactory.createConnectionToMySql();
             pstm = conn.prepareStatement(sql);
-            pstm.setString(1, nome);
+            pstm.setString(1, "%" + nome + "%");
             pstm.setString(2, Id);
-            pstm.setString(3, CPF);
+            pstm.setString(3, "%" + CPF + "%");
             ResultSet rs = pstm.executeQuery();
 
             while (rs.next()) {
@@ -212,7 +212,124 @@ public class ClienteDAO {
                 clienteList.add(cliente);
             }
 
-            System.out.println("PESQUISADO POR NOME COM SUCESSO!");
+            System.out.println("PESQUISADO POR NOME ou ID ou CPF COM SUCESSO!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return clienteList;
+    }
+
+    public List<Cliente> procurarPorIdOuCPF(String Id, String CPF) {
+        ArrayList<Cliente> clienteList = new ArrayList();
+        String sql = "select * from cliente where id_cliente like ? or CPF like ?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        Cliente cliente = null;
+
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, Id);
+            pstm.setString(2, "%" + CPF + "%");
+            ResultSet rs = pstm.executeQuery();
+
+            while (rs.next()) {
+                cliente = new Cliente(rs.getInt("id_cliente"), rs.getString("nome"), rs.getString("CPF"), rs.getString("telefone"), rs.getString("email"));
+                cliente.setId(rs.getInt("id_cliente"));
+                clienteList.add(cliente);
+            }
+
+            System.out.println("PESQUISADO POR ID ou CPF COM SUCESSO!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return clienteList;
+    }
+
+    public List<Cliente> procurarPorNomeOuCPF(String nome, String CPF) {
+        ArrayList<Cliente> clienteList = new ArrayList();
+        String sql = "select * from cliente where nome like ? or CPF like ?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        Cliente cliente = null;
+
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, "%" + nome + "%");
+            pstm.setString(2, "%" + CPF + "%");
+            ResultSet rs = pstm.executeQuery();
+
+            while (rs.next()) {
+                cliente = new Cliente(rs.getInt("id_cliente"), rs.getString("nome"), rs.getString("CPF"), rs.getString("telefone"), rs.getString("email"));
+                cliente.setId(rs.getInt("id_cliente"));
+                clienteList.add(cliente);
+            }
+
+            System.out.println("PESQUISADO POR NOME ou CPF COM SUCESSO!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return clienteList;
+    }
+    
+    public List<Cliente> procurarPorNomeOuId(String nome, String id) {
+        ArrayList<Cliente> clienteList = new ArrayList();
+        String sql = "select * from cliente where nome like ? or id_cliente like ?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        Cliente cliente = null;
+
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, "%" + nome + "%");
+            pstm.setString(2, id);
+            ResultSet rs = pstm.executeQuery();
+
+            while (rs.next()) {
+                cliente = new Cliente(rs.getInt("id_cliente"), rs.getString("nome"), rs.getString("CPF"), rs.getString("telefone"), rs.getString("email"));
+                cliente.setId(rs.getInt("id_cliente"));
+                clienteList.add(cliente);
+            }
+
+            System.out.println("PESQUISADO POR NOME ou CPF COM SUCESSO!");
 
         } catch (Exception e) {
             e.printStackTrace();

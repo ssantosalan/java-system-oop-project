@@ -29,6 +29,12 @@ public class TesteDeCliente {
 //        System.out.println(clienteDAO.procurarPorNome("Alanzando"));
 //        System.out.println(clienteDAO.procurarPorNome("Al"));
 //        System.out.println(clienteDAO.procurarPorCPF("4"));
-        System.out.println(clienteDAO.procurarPorNomeOuIdOuCPF("Jorge Silva", "2", ""));
+//        System.out.println(clienteDAO.procurarPorNomeOuIdOuCPF("Jorge Silva", "2", ""));
+//        System.out.println(clienteDAO.procurarPorIdOuCPF("1", "4"));
+//        System.out.println(clienteDAO.procurarPorNomeOuCPF("Silva", "4002"));
+        System.out.println(clienteDAO.procurarPorNomeOuId("Jo", "3"));
+        
+        
+                
     }
 }
