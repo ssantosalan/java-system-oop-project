@@ -11,27 +11,24 @@ import br.com.novablues.model.Estoque;
  *
  * @author Gui
  */
-public class TesteDeCadastroDeProduto {
+public class TesteDeProduto {
+
     public static void main(String[] args) {
         Estoque produto = new Estoque();
-        
+
         produto.setNome_produto("Teclado sem fio");
         produto.setQuantidade(500);
         produto.setId_produto(15);
         produto.setValor_unit(450.00);
-        
+
         EstoqueDAO estoqueDAO = new EstoqueDAO();
+
+//        estoqueDAO.cadastrarProduto(produto);
+        estoqueDAO.excluirProduto(produto);
         
-        estoqueDAO.cadastrarProduto(produto);
+        //Fazer tratamento para verificar informações da descrição do produto usando um try-catch
         
-        
-        
+
     }
-        
-        
-       
-                
-        
-        
-    
+
 }

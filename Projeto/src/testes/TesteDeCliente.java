@@ -11,16 +11,20 @@ import br.com.novablues.model.Cliente;
  *
  * @author Gui
  */
-public class TesteDeCadastroCliente {
+public class TesteDeCliente {
     public static void main(String[] args) {
         Cliente cliente = new Cliente();
-        cliente.setNome("Alan dos Santos");
-        cliente.setCPF("40028922");
-        cliente.setTelefone("119123456789");
-        cliente.setEmail("alan.santos@novablues.com.br");
+//        cliente.setNome("Alan dos Santos");
+//        cliente.setCPF("40028922");
+//        cliente.setTelefone("119123456789");
+//        cliente.setEmail("alan.santos@novablues.com.br");
+        cliente.setId(2);
+
         
         ClienteDAO clienteDAO = new ClienteDAO();
         
-        clienteDAO.cadastrarCliente(cliente);
+//        clienteDAO.cadastrarCliente(cliente);
+
+        clienteDAO.excluirCliente(cliente);
     }
 }

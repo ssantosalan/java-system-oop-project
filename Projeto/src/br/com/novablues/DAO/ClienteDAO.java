@@ -50,5 +50,35 @@ public class ClienteDAO {
 			}
 		}
     }
+    public void excluirCliente(Cliente cliente) {
+        String sql = "DELETE FROM cliente WHERE id_cliente = ?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+
+            pstm.setInt(1, cliente.getId());
+            
+
+            pstm.execute();
+            System.out.println("EXCLUÍDO COM SUCESSO!");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    
     
 }

@@ -11,18 +11,20 @@ import br.com.novablues.model.Usuario;
  *
  * @author Gui
  */
-public class TesteDeCadastroUsuario {
+public class TesteDeUsuario {
     public static void main(String[] args) {
         Usuario usuario = new Usuario();
         
-        usuario.setNome_usuario("Arthur Solla");
-        usuario.setEmail("arthur-sollaa@novablues.com.br");
-        usuario.setSenha("romulo");
-        usuario.setAcesso("Gerente");
+//        usuario.setNome_usuario("Joao Andrade");
+//        usuario.setEmail("joao-andrade@novablues.com.br");
+//        usuario.setSenha("teste");
+//        usuario.setAcesso("Colaborador");
+        usuario.setId_usuario(5);
         
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         
-        usuarioDAO.cadastrarUser(usuario);
+        //usuarioDAO.cadastrarUser(usuario);
         
+        usuarioDAO.excluirUser(usuario);
     }
 }

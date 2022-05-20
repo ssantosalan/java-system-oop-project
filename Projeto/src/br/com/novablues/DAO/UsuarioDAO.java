@@ -49,4 +49,34 @@ public class UsuarioDAO {
 			}
 		}
     }
+     
+     public void excluirUser(Usuario usuario) {
+        String sql = "DELETE FROM usuario WHERE id_usuario = ?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+
+            pstm.setInt(1, usuario.getId_usuario());
+            
+
+            pstm.execute();
+            System.out.println("EXCLUÍDO COM SUCESSO!");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
