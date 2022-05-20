@@ -9,6 +9,8 @@ import br.com.novablues.model.Cliente;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClienteDAO {
 
@@ -111,6 +113,82 @@ public class ClienteDAO {
             }
         }
         return cliente;
+    }
+    
+    public List<Cliente> procurarPorNome(String nome) {
+        ArrayList<Cliente> clienteList = new ArrayList();
+        String sql = "select * from cliente where nome like ?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        Cliente cliente = null;
+
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, "%" + nome + "%");
+            ResultSet rs = pstm.executeQuery();
+
+            while (rs.next()) {
+                cliente = new Cliente(rs.getInt("id_cliente"), rs.getString("nome"), rs.getString("CPF"), rs.getString("telefone"), rs.getString("email"));
+                cliente.setId(rs.getInt("id_cliente"));
+                clienteList.add(cliente);
+            }
+
+            System.out.println("PESQUISADO POR NOME COM SUCESSO!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return clienteList;
+    }
+    
+    public List<Cliente> procurarPorCPF(String CPF) {
+        ArrayList<Cliente> clienteList = new ArrayList();
+        String sql = "select * from cliente where CPF like ?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        Cliente cliente = null;
+
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, "%" + CPF + "%");
+            ResultSet rs = pstm.executeQuery();
+
+            while (rs.next()) {
+                cliente = new Cliente(rs.getInt("id_cliente"), rs.getString("nome"), rs.getString("CPF"), rs.getString("telefone"), rs.getString("email"));
+                cliente.setId(rs.getInt("id_cliente"));
+                clienteList.add(cliente);
+            }
+
+            System.out.println("PESQUISADO POR CPF COM SUCESSO!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return clienteList;
     }
 
 }
