@@ -10,10 +10,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-/**
- *
- * @author Gui
- */
 public class ClienteDAO {
 
     public void cadastrarCliente(Cliente cliente) {
