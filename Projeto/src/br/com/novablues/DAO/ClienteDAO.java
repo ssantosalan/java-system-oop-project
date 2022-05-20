@@ -190,5 +190,45 @@ public class ClienteDAO {
         }
         return clienteList;
     }
+    
+    public List<Cliente> procurarPorNomeOuIdOuCPF(String nome, String Id, String CPF) {
+        ArrayList<Cliente> clienteList = new ArrayList();
+        String sql = "select * from cliente where nome like ? or id_cliente like ? or CPF like ?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        Cliente cliente = null;
+
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, nome);
+            pstm.setString(2, Id);
+            pstm.setString(3, CPF);
+            ResultSet rs = pstm.executeQuery();
+
+            while (rs.next()) {
+                cliente = new Cliente(rs.getInt("id_cliente"), rs.getString("nome"), rs.getString("CPF"), rs.getString("telefone"), rs.getString("email"));
+                cliente.setId(rs.getInt("id_cliente"));
+                clienteList.add(cliente);
+            }
+
+            System.out.println("PESQUISADO POR NOME COM SUCESSO!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return clienteList;
+    }
 
 }
