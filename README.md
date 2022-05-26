@@ -17,7 +17,6 @@ Java project using OOP (Object Oriented Programming).
 ## What are we using in this project?
 - Java
 - Object-oriented Programming (OOP)
-- JavaFX
 - Use Case Diagram
 - Class diagram
 - Git and Github
