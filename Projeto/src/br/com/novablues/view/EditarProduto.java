@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fontes;
+package br.com.novablues.view;
 
 import java.awt.Color;
 import java.sql.Connection;
@@ -79,7 +79,6 @@ public class EditarProduto extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
         jPanel11.setBackground(new java.awt.Color(0, 127, 255));
-        jPanel11.setForeground(new java.awt.Color(0, 0, 0));
         jPanel11.setPreferredSize(new java.awt.Dimension(639, 34));
 
         jLabel14.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
@@ -98,7 +97,7 @@ public class EditarProduto extends javax.swing.JFrame {
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel14)
                 .addContainerGap())
         );
@@ -124,7 +123,6 @@ public class EditarProduto extends javax.swing.JFrame {
         jPanel2.setForeground(new java.awt.Color(51, 51, 51));
 
         jLabel9.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Código");
 
         jLabel22.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -172,7 +170,6 @@ public class EditarProduto extends javax.swing.JFrame {
         jPanel3.setForeground(new java.awt.Color(51, 51, 51));
 
         jLabel10.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Descrição");
 
         jLabel23.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -180,7 +177,6 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel23.setText("*");
 
         jLabel11.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Preço");
 
         jLabel24.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -188,7 +184,6 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel24.setText("*");
 
         jLabel49.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(0, 0, 0));
         jLabel49.setText("Estoque Atual");
 
         jLabel25.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -196,7 +191,6 @@ public class EditarProduto extends javax.swing.JFrame {
         jLabel25.setText("*");
 
         jLabel50.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(0, 0, 0));
         jLabel50.setText("Adicionar Estoque");
 
         textoEditarEstoqueProduto.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
@@ -302,7 +296,7 @@ public class EditarProduto extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE)
+            .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 479, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -494,7 +488,7 @@ public class EditarProduto extends javax.swing.JFrame {
             }
         });
     }
-
+ 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoCancelarEditarProduto;
     private javax.swing.JButton botaoConfirmarEditarProduto;

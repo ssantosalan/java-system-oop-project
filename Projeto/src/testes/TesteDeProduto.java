@@ -16,19 +16,34 @@ public class TesteDeProduto {
     public static void main(String[] args) {
         Estoque produto = new Estoque();
 
-        produto.setNome_produto("Teclado sem fio");
-        produto.setQuantidade(500);
-        produto.setId_produto(15);
-        produto.setValor_unit(450.00);
+        //produto.setNome_produto("Suporte com cooler p/ notebook");
+       // produto.setQuantidade(500);
+     //   produto.setValor_unit(100.00);
 
         EstoqueDAO estoqueDAO = new EstoqueDAO();
-
-//        estoqueDAO.cadastrarProduto(produto);
-        estoqueDAO.excluirProduto(produto);
+        
+        
+//        for(Estoque c : estoqueDAO.ListagemProdutos()) {
+//			System.out.println("ID: " + c.getId_produto());
+//                        System.out.println("Nome: " + c.getNome_produto());
+//                        System.out.println("Quantidade: " + c.getQuantidade());
+//                        System.out.println("Valor: " + c.getValor_unit());
+//			
+//		}
+        
+       // estoqueDAO.cadastrarProduto(produto);
+       // estoqueDAO.excluirProduto(produto);
         
         //Fazer tratamento para verificar informações da descrição do produto usando um try-catch
         
 
+        
+        String name = "Acer";
+		
+		for(Estoque c : estoqueDAO.ListagemForName(name)) {
+			System.out.println("Contato: " + c.getNome_produto());
+			
+		}
     }
 
 }

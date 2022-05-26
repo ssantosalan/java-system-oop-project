@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fontes;
+package br.com.novablues.view;
 
 import java.awt.Color;
 import java.sql.Connection;
@@ -32,7 +32,7 @@ public class Login extends javax.swing.JFrame {
     
     
     public void logar() {
-        String sql = "select * from usuario where email=? and senha=?";
+        String sql = "select * from usuario where nome_usuario=? and senha=?";
         try {
             /* as linhas abaixo prepara a consulta ao banco em função do que foi
            digitado nas caixas de texto. O "?" é substituido pelo conteudo
@@ -53,14 +53,14 @@ public class Login extends javax.swing.JFrame {
                     venda.setVisible(true);
                     Venda.abaProduto1.setEnabled(true);
                     Venda.labelVendedor.setText(rs.getString(2));
-                    Venda.labelVendedor.setForeground(Color.WHITE);
+                    Venda.labelVendedor.setForeground(Color.GRAY);
                     this.dispose();
                 } else {
                     VendaColab VendaColab = new VendaColab();
                     VendaColab.setVisible(true);
                     VendaColab.abaProduto1.setEnabled(false);
                     VendaColab.labelVendedor.setText(rs.getString(2));
-                    VendaColab.labelVendedor.setForeground(Color.WHITE);
+                    VendaColab.labelVendedor.setForeground(Color.GRAY);
                    this.dispose();
                 }
 
@@ -80,7 +80,7 @@ public class Login extends javax.swing.JFrame {
         
         this.setLocationRelativeTo(null);
         try {
-            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "admin");
+            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) conexao.createStatement();
             JOptionPane.showMessageDialog(null, "Conectado!");
         } catch (Exception e) {
@@ -118,16 +118,13 @@ public class Login extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Login");
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Senha");
 
         txtLogin.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        txtLogin.setForeground(new java.awt.Color(0, 0, 0));
         txtLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtLoginActionPerformed(evt);
@@ -135,7 +132,6 @@ public class Login extends javax.swing.JFrame {
         });
 
         txtSenha.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        txtSenha.setForeground(new java.awt.Color(0, 0, 0));
 
         botaoLogin.setBackground(new java.awt.Color(255, 255, 255));
         botaoLogin.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N

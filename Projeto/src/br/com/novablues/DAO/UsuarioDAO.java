@@ -14,43 +14,43 @@ import java.sql.PreparedStatement;
  * @author Gui
  */
 public class UsuarioDAO {
-     public void cadastrarUser (Usuario usuario){
+
+    public void cadastrarUser(Usuario usuario) {
         String sql = "INSERT INTO usuario(nome_usuario, email, senha, acesso) VALUES (?, ?, ?, ?)";
-		Connection conn = null;
+        Connection conn = null;
 
-		PreparedStatement pstm = null;
-                
-                
-		try {
-			conn = ConnectionFactory.createConnectionToMySql();
-			pstm = conn.prepareStatement(sql);
+        PreparedStatement pstm = null;
 
-			pstm.setString(1, usuario.getNome_usuario());
-			pstm.setString(2, usuario.getEmail());
-			pstm.setString(3, usuario.getSenha());
-                        pstm.setString(4, usuario.getAcesso());
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
 
-			pstm.execute();
-			System.out.println("Usuario cadastrado com sucesso!");
+            pstm.setString(1, usuario.getNome_usuario());
+            pstm.setString(2, usuario.getEmail());
+            pstm.setString(3, usuario.getSenha());
+            pstm.setString(4, usuario.getAcesso());
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			// fechar conexoes
-			try {
-				if (pstm != null) {
-					pstm.close();
-				}
-				if (conn != null) {
-					conn.close();
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
+            pstm.execute();
+            System.out.println("Usuario cadastrado com sucesso!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            // fechar conexoes
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
-     
-     public void excluirUser(Usuario usuario) {
+
+    public void excluirUser(Usuario usuario) {
         String sql = "DELETE FROM usuario WHERE id_usuario = ?";
         Connection conn = null;
         PreparedStatement pstm = null;
@@ -60,7 +60,6 @@ public class UsuarioDAO {
             pstm = conn.prepareStatement(sql);
 
             pstm.setInt(1, usuario.getId_usuario());
-            
 
             pstm.execute();
             System.out.println("EXCLUÍDO COM SUCESSO!");
@@ -79,4 +78,23 @@ public class UsuarioDAO {
             }
         }
     }
+
+    public void login(String email, String senha) {
+        String sql = "select * from usuario where email=? and senha=?";
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        Usuario usuario = new Usuario();
+        try {
+            conn = ConnectionFactory.createConnectionToMySql();
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, email);
+            pstm.setString(2, senha);
+            
+        }catch(Exception e){
+            
+    }
+        
+        
+}
+    
 }

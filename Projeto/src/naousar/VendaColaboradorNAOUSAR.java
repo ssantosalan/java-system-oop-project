@@ -5,7 +5,7 @@
  */
 package naousar;
 
-import fontes.EditarProduto;
+import br.com.novablues.view.EditarProduto;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;

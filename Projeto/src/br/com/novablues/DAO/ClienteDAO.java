@@ -191,6 +191,12 @@ public class ClienteDAO {
         return clienteList;
     }
 
+    /**
+     *
+     * @param CPF
+     * @return
+     */
+    
     public List<Cliente> procurarPorNomeOuIdOuCPF(String nome, String Id, String CPF) {
         ArrayList<Cliente> clienteList = new ArrayList();
         String sql = "select * from cliente where nome like ? or id_cliente like ? or CPF like ?";
