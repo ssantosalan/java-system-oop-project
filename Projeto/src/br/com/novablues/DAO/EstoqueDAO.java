@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -34,7 +35,7 @@ public class EstoqueDAO {
             pstm.setDouble(4, produto.getValor_unit());
 
             pstm.execute();
-            System.out.println("Produto cadastrado com sucesso!");
+            JOptionPane.showMessageDialog(null, "Produto cadastrado com sucesso!");
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -66,7 +67,7 @@ public class EstoqueDAO {
             
 
             pstm.execute();
-            System.out.println("EXCLUÍDO COM SUCESSO!");
+            JOptionPane.showMessageDialog(null, "EXCLUÍDO COM SUCESSO!");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

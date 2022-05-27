@@ -5,7 +5,6 @@
  */
 package br.com.novablues.view;
 
-
 import br.com.novablues.connection.ConnectionFactory;
 import br.com.novablues.controller.ControllerProdutos;
 import br.com.novablues.model.Estoque;
@@ -28,7 +27,7 @@ import javax.swing.table.DefaultTableModel;
  * @author Alan TESTOU
  */
 public class Venda extends javax.swing.JFrame {
-    
+
     ConnectionFactory conn = new ConnectionFactory();
     ArrayList<Estoque> listarProdutos = new ArrayList<>();
     ControllerProdutos controllerProdutos = new ControllerProdutos();
@@ -54,12 +53,12 @@ public class Venda extends javax.swing.JFrame {
             st = (Statement) conexao.createStatement();
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) con.createStatement();
-           
+
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Não Conectado!");
 
         }
-       
+
     }
 
     /**
@@ -3038,8 +3037,8 @@ public class Venda extends javax.swing.JFrame {
     private void botaoAdicionarProdutoCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAdicionarProdutoCaixaActionPerformed
         if (listaProduto.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(null, "Nenhum item selecionado!");
-           
-        }else if("".equals(textoQuantidadeProduto.getText())){
+
+        } else if ("".equals(textoQuantidadeProduto.getText())) {
             JOptionPane.showMessageDialog(null, "Coloque a quantidade de produto!");
         }
 
@@ -3608,7 +3607,7 @@ public class Venda extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoRemoverProdutoCaixa1ActionPerformed
 
     private void botaoPesquisarProdutoCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPesquisarProdutoCaixaActionPerformed
-       buscarProduto();
+        buscarProduto();
     }//GEN-LAST:event_botaoPesquisarProdutoCaixaActionPerformed
 
     private void botaoFinalizarVendaCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoFinalizarVendaCaixaActionPerformed
@@ -3639,7 +3638,7 @@ public class Venda extends javax.swing.JFrame {
 
             if (rs.next()) {
                 String numero_pedido = rs.getString(1);
-                
+
                 int qtdLinhasTabela = model.getRowCount();
                 for (int i = 0; i < qtdLinhasTabela; i++) {
                     String codigo = model.getValueAt(i, 0).toString();
@@ -3653,11 +3652,11 @@ public class Venda extends javax.swing.JFrame {
 
                     st.executeUpdate(att);
                     st.executeUpdate(minhasql);
-                    
+
                 }
                 JOptionPane.showMessageDialog(null, "Venda realizada com sucesso!");
-            } 
-            
+            }
+
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Erro ao finalizar compra!");
         }
@@ -3706,14 +3705,14 @@ public class Venda extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoGerarRelatorioMouseExited
 
     private void botaoGerarRelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoGerarRelatorioActionPerformed
-        
+
         String numeroPedido, nomeCli, dataI, dataF;
         int linha = 0;
         numeroPedido = jnumeroPedido.getText();
         nomeCli = jnomeCliente.getText();
         dataI = jdataInicial.getDateFormatString();
         dataF = jdataFinal.getDateFormatString();
- 
+
         String minhasql;
 
         try {
@@ -3728,13 +3727,12 @@ public class Venda extends javax.swing.JFrame {
                 linha++;
             } while (linha < 40);
             linha = 0;
-            
-            
-            if (!jnumeroPedido.getText().equals("") ){                
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente as C\n" +
-                "where PV.numero_pedido = '"+numeroPedido+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+
+            if (!jnumeroPedido.getText().equals("")) {
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n"
+                        + "inner join estoque as E\n"
+                        + "inner join cliente as C\n"
+                        + "where PV.numero_pedido = '" + numeroPedido + "' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
                 resultado = st.executeQuery(minhasql);
 
                 while (resultado.next()) {
@@ -3748,18 +3746,18 @@ public class Venda extends javax.swing.JFrame {
                 }
 
             } else if (!jnomeCliente.getText().equals("") && !dataI.equals("") && !dataF.equals("")) {
-                 SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
-                 String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
-                 String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
-                 
-                minhasql ="select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n" +
-                "cliente as C inner join \n" +
-                "estoque as E\n" +
-                "where C.nome like '"+nomeCli+"%' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto && data_venda between '"+dataFormatadaInicio+"' and '"+dataFormatadaFinal+"';"; 
-                             
+                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
+                String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
+                String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
+
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n"
+                        + "cliente as C inner join \n"
+                        + "estoque as E\n"
+                        + "where C.nome like '" + nomeCli + "%' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto && data_venda between '" + dataFormatadaInicio + "' and '" + dataFormatadaFinal + "';";
+
                 resultado = st.executeQuery(minhasql);
 
-                while (resultado.next()){
+                while (resultado.next()) {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
@@ -3768,16 +3766,16 @@ public class Venda extends javax.swing.JFrame {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
                     linha++;
                 }
-                
+
             } else if (!jnomeCliente.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "ENTROU!");
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n" +
-                "cliente as C inner join \n" +
-                "estoque as E\n" +
-                "where C.nome like '"+nomeCli+"%'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n"
+                        + "cliente as C inner join \n"
+                        + "estoque as E\n"
+                        + "where C.nome like '" + nomeCli + "%'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
                 resultado = st.executeQuery(minhasql);
-                 
-                while (resultado.next()){
+
+                while (resultado.next()) {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
@@ -3786,34 +3784,34 @@ public class Venda extends javax.swing.JFrame {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
                     linha++;
                 }
-       
+
             } else if (!dataI.equals("") && !dataF.equals("")) {
 
-                    SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
-                    String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
-                    String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
+                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
+                String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
+                String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
 
-                    minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n" +
-                    "inner join estoque as E\n" +
-                    "inner join cliente as C \n" +
-                    "WHERE data_venda between '"+dataFormatadaInicio+"' and '"+dataFormatadaFinal+"'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
-                    resultado = st.executeQuery(minhasql);
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n"
+                        + "inner join estoque as E\n"
+                        + "inner join cliente as C \n"
+                        + "WHERE data_venda between '" + dataFormatadaInicio + "' and '" + dataFormatadaFinal + "'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+                resultado = st.executeQuery(minhasql);
 
-                    while (resultado.next()){
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
-                        linha++;
-                    }
+                while (resultado.next()) {
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
+                    linha++;
                 }
+            }
 
         } catch (Exception e) {
-           
+
         }
-        
+
     }//GEN-LAST:event_botaoGerarRelatorioActionPerformed
 
     private void botaoAcessoGerenteVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAcessoGerenteVendedorActionPerformed
@@ -3839,87 +3837,87 @@ public class Venda extends javax.swing.JFrame {
     }//GEN-LAST:event_RBAActionPerformed
 
     private void botaoGerarRelatorio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoGerarRelatorio2ActionPerformed
-        
+
         String dataI2, dataF2;
-        int linha = 0;        
+        int linha = 0;
         dataI2 = jdataInicial2.getDateFormatString();
         dataF2 = jdataFinal2.getDateFormatString();
-        
+
         SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("yyyy/MM/dd");
         String dataFormatadaI2 = simpleDateFormat2.format(jdataInicial2.getDate());
         String dataFormatadaF2 = simpleDateFormat2.format(jdataFinal2.getDate());
-        
+
         String minhasql;
 
         try {
 
-            do {                
+            do {
                 tabelaRelatorioSintetico.setValueAt("", linha, 0);
                 tabelaRelatorioSintetico.setValueAt("", linha, 1);
                 tabelaRelatorioSintetico.setValueAt("", linha, 2);
                 tabelaRelatorioSintetico.setValueAt("", linha, 3);
-                             
+
                 linha++;
             } while (linha < 20);
             linha = 0;
-            
-             if (RBD.isSelected()){
-                 
-                minhasql = "select year(PV.data_venda) as ano, month(PV.data_venda) as mes, day(PV.data_venda) as dia, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente as C\n" +
-                "WHERE data_venda between  '"+dataFormatadaI2+"'  and '"+dataFormatadaF2+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by data_venda;";
+
+            if (RBD.isSelected()) {
+
+                minhasql = "select year(PV.data_venda) as ano, month(PV.data_venda) as mes, day(PV.data_venda) as dia, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n"
+                        + "inner join estoque as E\n"
+                        + "inner join cliente as C\n"
+                        + "WHERE data_venda between  '" + dataFormatadaI2 + "'  and '" + dataFormatadaF2 + "' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by data_venda;";
                 resultado = st.executeQuery(minhasql);
 
-                while (resultado.next()){
+                while (resultado.next()) {
                     tabelaRelatorioSintetico.setValueAt(resultado.getString("dia"), linha, 0);
                     tabelaRelatorioSintetico.setValueAt(resultado.getString("mes"), linha, 1);
                     tabelaRelatorioSintetico.setValueAt(resultado.getString("ano"), linha, 2);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);                                     
+                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);
                     linha++;
                 }
 
-            } else if (RBM.isSelected()){
-                
-                minhasql = "select year(PV.data_venda) as ano, month(PV.data_venda) as mes, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente as C\n" +
-                "WHERE data_venda between  '"+dataFormatadaI2+"'  and '"+dataFormatadaF2+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by month(data_venda);";                 
+            } else if (RBM.isSelected()) {
+
+                minhasql = "select year(PV.data_venda) as ano, month(PV.data_venda) as mes, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n"
+                        + "inner join estoque as E\n"
+                        + "inner join cliente as C\n"
+                        + "WHERE data_venda between  '" + dataFormatadaI2 + "'  and '" + dataFormatadaF2 + "' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by month(data_venda);";
                 resultado = st.executeQuery(minhasql);
-                 
-                while (resultado.next()){
+
+                while (resultado.next()) {
                     tabelaRelatorioSintetico.setValueAt("", linha, 0);
                     tabelaRelatorioSintetico.setValueAt(resultado.getString("mes"), linha, 1);
                     tabelaRelatorioSintetico.setValueAt(resultado.getString("ano"), linha, 2);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);                                       
+                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);
                     linha++;
                 }
 
             } else if (RBA.isSelected()) {
-                
-                minhasql = "select  year(PV.data_venda) as ano, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente  as C\n" +
-                "WHERE data_venda between  '"+dataFormatadaI2+"'  and '"+dataFormatadaF2+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by year(data_venda);";
+
+                minhasql = "select  year(PV.data_venda) as ano, sum(E.valor_unit * Pv.quantidade_comprada) as total_dia from pedido_de_venda  as PV\n"
+                        + "inner join estoque as E\n"
+                        + "inner join cliente  as C\n"
+                        + "WHERE data_venda between  '" + dataFormatadaI2 + "'  and '" + dataFormatadaF2 + "' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto group by year(data_venda);";
                 resultado = st.executeQuery(minhasql);
 
-                while (resultado.next()){
+                while (resultado.next()) {
                     tabelaRelatorioSintetico.setValueAt("", linha, 0);
                     tabelaRelatorioSintetico.setValueAt("", linha, 1);
                     tabelaRelatorioSintetico.setValueAt(resultado.getString("ano"), linha, 2);
-                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);                                     
+                    tabelaRelatorioSintetico.setValueAt(resultado.getString("total_dia"), linha, 3);
                     linha++;
                 }
 
             } else {
-                JOptionPane.showMessageDialog(null, "Selecione um tipo de relatório: dia, mês ou ano.");           
+                JOptionPane.showMessageDialog(null, "Selecione um tipo de relatório: dia, mês ou ano.");
             }
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Registro não encontrado!");
         }
-        
-        
+
+
     }//GEN-LAST:event_botaoGerarRelatorio2ActionPerformed
 
     private void jdataInicialMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jdataInicialMouseEntered
@@ -3992,41 +3990,41 @@ public class Venda extends javax.swing.JFrame {
             }
         });
     }
-    
-    
-    private void carregarTabela(){
+
+    private void carregarTabela() {
         listarProdutos = controllerProdutos.retornaListaProdutos();
         DefaultTableModel modelo = (DefaultTableModel) listaProduto.getModel();
-        
+
         modelo.setNumRows(0);
         int cont = listarProdutos.size();
-        
+
         for (int i = 0; i < cont; i++) {
             modelo.addRow(new Object[]{
                 listarProdutos.get(i).getId_produto(),
                 listarProdutos.get(i).getNome_produto(),
                 listarProdutos.get(i).getValor_unit(),
                 listarProdutos.get(i).getQuantidade()
-        });
+            });
+        }
     }
-    }
-      private void buscarProduto(){
+
+    private void buscarProduto() {
         String nome = textoDescricaoProdutoCaixa.getText();
-        
+
         listarProdutos = controllerProdutos.retornaProdutosBuscadosController(nome);
         DefaultTableModel modelo = (DefaultTableModel) listaProduto.getModel();
-            modelo.setNumRows(0);
+        modelo.setNumRows(0);
         int cont = listarProdutos.size();
-        
+
         for (int i = 0; i < cont; i++) {
             modelo.addRow(new Object[]{
                 listarProdutos.get(i).getId_produto(),
                 listarProdutos.get(i).getNome_produto(),
                 listarProdutos.get(i).getValor_unit(),
                 listarProdutos.get(i).getQuantidade()
-        });
-    }
-        
+            });
+        }
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
