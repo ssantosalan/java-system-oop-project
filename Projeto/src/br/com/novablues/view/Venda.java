@@ -48,12 +48,13 @@ public class Venda extends javax.swing.JFrame {
 
     public Venda() {
         initComponents();
+        this.setLocationRelativeTo(null);
         try {
             conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) conexao.createStatement();
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "");
             st = (Statement) con.createStatement();
-
+            JOptionPane.showMessageDialog(null, "Conectado!");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Não Conectado!");
 
@@ -363,7 +364,7 @@ public class Venda extends javax.swing.JFrame {
                 .addComponent(jLabel65)
                 .addGap(18, 18, 18)
                 .addComponent(textoDescricaoProdutoCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addComponent(botaoPesquisarProdutoCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -704,8 +705,8 @@ public class Venda extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel35Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
-                    .addComponent(labelTotal, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                    .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelTotal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(botaoFinalizarVendaCaixa))
                 .addGap(20, 20, 20)
                 .addGroup(jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -875,7 +876,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
-                .addContainerGap(67, Short.MAX_VALUE)
+                .addContainerGap(68, Short.MAX_VALUE)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel56)
                     .addComponent(jLabel48)
@@ -891,7 +892,7 @@ public class Venda extends javax.swing.JFrame {
                     .addGroup(jPanel19Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addComponent(jLabel54)))
-                .addGap(58, 74, Short.MAX_VALUE)
+                .addGap(58, 75, Short.MAX_VALUE)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(botaoAdicionarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textoTelefoneCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -899,7 +900,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(textoCPFCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textoNomeCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textoCodigoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -928,7 +929,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(jLabel56))
                 .addGap(18, 18, 18)
                 .addComponent(botaoAdicionarCliente)
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         jPanel20.setBackground(new java.awt.Color(0, 127, 255));
@@ -950,7 +951,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(12, Short.MAX_VALUE)
                 .addComponent(jLabel38)
                 .addContainerGap())
         );
@@ -1055,7 +1056,7 @@ public class Venda extends javax.swing.JFrame {
                                 .addComponent(jLabel55)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel57)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
                                 .addComponent(textoExcluirCodigoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
                                 .addComponent(jLabel59)
@@ -1180,7 +1181,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(botaoPesquisarCliente)
                     .addComponent(jLabel47)
                     .addComponent(textoFiltrarCPFCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         jPanel23.setBackground(new java.awt.Color(255, 255, 255));
@@ -1237,7 +1238,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, 1262, Short.MAX_VALUE)
+            .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, 1265, Short.MAX_VALUE)
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addGap(62, 62, 62)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1249,7 +1250,7 @@ public class Venda extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jPanel23, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel22, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 1131, Short.MAX_VALUE)
+                            .addComponent(jPanel22, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 1134, Short.MAX_VALUE)
                             .addGroup(jPanel17Layout.createSequentialGroup()
                                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel17Layout.createSequentialGroup()
@@ -1315,7 +1316,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(12, Short.MAX_VALUE)
                 .addComponent(jLabel60)
                 .addContainerGap())
         );
@@ -1596,7 +1597,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(botaoExcluirVendedor, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
                     .addComponent(textoExcluirCodigoVendedor, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
                     .addComponent(textoExcluirNomeVendedor))
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
         jPanel30Layout.setVerticalGroup(
             jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1690,7 +1691,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(textoFiltrarNomeVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel107)
                     .addComponent(botaoPesquisarVendedor))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         jPanel32.setBackground(new java.awt.Color(255, 255, 255));
@@ -1758,7 +1759,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, 1262, Short.MAX_VALUE)
+            .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, 1265, Short.MAX_VALUE)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(57, 57, 57)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1801,7 +1802,7 @@ public class Venda extends javax.swing.JFrame {
                             .addComponent(jLabel94)
                             .addComponent(jLabel95))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, 326, Short.MAX_VALUE)))
+                        .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)))
                 .addGap(39, 39, 39)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel105)
@@ -1837,7 +1838,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(12, Short.MAX_VALUE)
                 .addComponent(jLabel14)
                 .addContainerGap())
         );
@@ -2018,7 +2019,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addContainerGap(132, Short.MAX_VALUE)
+                .addContainerGap(137, Short.MAX_VALUE)
                 .addComponent(jLabel19)
                 .addGap(65, 65, 65)
                 .addComponent(textoFiltrarCodigoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2040,7 +2041,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(textoFiltrarDescricaoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel20)
                     .addComponent(botaoPesquisarProduto))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         jPanel14.setBackground(new java.awt.Color(255, 255, 255));
@@ -2204,7 +2205,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(botaoExcluirProduto, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
                     .addComponent(textoExcluirCodigoProduto, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
                     .addComponent(textoExcluirDescricaoProduto))
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2228,7 +2229,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 1262, Short.MAX_VALUE)
+            .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 1265, Short.MAX_VALUE)
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(61, 61, 61)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2269,7 +2270,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(jLabel26))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
+                    .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
                     .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(58, 58, 58)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2381,7 +2382,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(jLabel8)
                     .addComponent(jLabel30)
                     .addComponent(botaoGerarRelatorio))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(jdataInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2400,7 +2401,57 @@ public class Venda extends javax.swing.JFrame {
         tabelaRelatorioAnalitico.setForeground(new java.awt.Color(0, 127, 255));
         tabelaRelatorioAnalitico.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
                 "N° Pedido", "Produto", "Quantidade comprada", "Valor total", "Cliente", "Data"
@@ -2717,7 +2768,7 @@ public class Venda extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 820, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 824, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Relatório", jPanel2);
@@ -3712,7 +3763,7 @@ public class Venda extends javax.swing.JFrame {
         nomeCli = jnomeCliente.getText();
         dataI = jdataInicial.getDateFormatString();
         dataF = jdataFinal.getDateFormatString();
-
+ 
         String minhasql;
 
         try {
@@ -3727,12 +3778,13 @@ public class Venda extends javax.swing.JFrame {
                 linha++;
             } while (linha < 40);
             linha = 0;
-
-            if (!jnumeroPedido.getText().equals("")) {
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n"
-                        + "inner join estoque as E\n"
-                        + "inner join cliente as C\n"
-                        + "where PV.numero_pedido = '" + numeroPedido + "' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+            
+            
+            if (!jnumeroPedido.getText().equals("") ){                
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n" +
+                "inner join estoque as E\n" +
+                "inner join cliente as C\n" +
+                "where PV.numero_pedido = '"+numeroPedido+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
                 resultado = st.executeQuery(minhasql);
 
                 while (resultado.next()) {
@@ -3746,18 +3798,18 @@ public class Venda extends javax.swing.JFrame {
                 }
 
             } else if (!jnomeCliente.getText().equals("") && !dataI.equals("") && !dataF.equals("")) {
-                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
-                String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
-                String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
-
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n"
-                        + "cliente as C inner join \n"
-                        + "estoque as E\n"
-                        + "where C.nome like '" + nomeCli + "%' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto && data_venda between '" + dataFormatadaInicio + "' and '" + dataFormatadaFinal + "';";
-
+                 SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
+                 String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
+                 String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
+                 
+                minhasql ="select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n" +
+                "cliente as C inner join \n" +
+                "estoque as E\n" +
+                "where C.nome like '"+nomeCli+"%' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto && data_venda between '"+dataFormatadaInicio+"' and '"+dataFormatadaFinal+"';"; 
+                             
                 resultado = st.executeQuery(minhasql);
 
-                while (resultado.next()) {
+                while (resultado.next()){
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
@@ -3766,16 +3818,16 @@ public class Venda extends javax.swing.JFrame {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
                     linha++;
                 }
-
+                
             } else if (!jnomeCliente.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "ENTROU!");
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n"
-                        + "cliente as C inner join \n"
-                        + "estoque as E\n"
-                        + "where C.nome like '" + nomeCli + "%'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n" +
+                "cliente as C inner join \n" +
+                "estoque as E\n" +
+                "where C.nome like '"+nomeCli+"%'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
                 resultado = st.executeQuery(minhasql);
-
-                while (resultado.next()) {
+                 
+                while (resultado.next()){
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
@@ -3784,32 +3836,32 @@ public class Venda extends javax.swing.JFrame {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
                     linha++;
                 }
-
+       
             } else if (!dataI.equals("") && !dataF.equals("")) {
 
-                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
-                String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
-                String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
+                    SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
+                    String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
+                    String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
 
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n"
-                        + "inner join estoque as E\n"
-                        + "inner join cliente as C \n"
-                        + "WHERE data_venda between '" + dataFormatadaInicio + "' and '" + dataFormatadaFinal + "'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
-                resultado = st.executeQuery(minhasql);
+                    minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n" +
+                    "inner join estoque as E\n" +
+                    "inner join cliente as C \n" +
+                    "WHERE data_venda between '"+dataFormatadaInicio+"' and '"+dataFormatadaFinal+"'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+                    resultado = st.executeQuery(minhasql);
 
-                while (resultado.next()) {
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
-                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
-                    linha++;
+                    while (resultado.next()){
+                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
+                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
+                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
+                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
+                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
+                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
+                        linha++;
+                    }
                 }
-            }
 
         } catch (Exception e) {
-
+           
         }
 
     }//GEN-LAST:event_botaoGerarRelatorioActionPerformed
