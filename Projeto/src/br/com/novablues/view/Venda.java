@@ -2843,52 +2843,6 @@ public class Venda extends javax.swing.JFrame {
     private void botaoAdicionarVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAdicionarVendedorActionPerformed
         // TODO add your handling code here:
         incluirUsuario();
-
-//        String codigo, nome, email, senha, confirmarSenha;
-//
-//        codigo = textoCodigoVendedor.getText();
-//        nome = textoNomeVendedor.getText();
-//        email = textoEmailVendedor.getText();
-//        senha = textoSenhaVendedor.getText();
-//        confirmarSenha = textoConfirmarSenhaVendedor.getText();
-//
-//        String acesso = "";
-//        if (botaoAcessoGerenteVendedor.isSelected()) {
-//            acesso = "Gerente";
-//        } else if (botaoAcessoColaboradorVendedor.isSelected()) {
-//            acesso = "Colaborador";
-//        }
-//
-//        try {
-//
-//            if (codigo.equals("") && !nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
-//                if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
-//                    String minhasql = "insert into usuario (nome_usuario, email, senha, acesso) values ('"
-//                            + nome + "','" + email + "','" + senha + "','" + acesso + "');";
-//                    st.executeUpdate(minhasql);
-//                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
-//                } else {
-//                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
-//                }
-//
-//            } else if (!codigo.equals("") && !nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
-//                if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
-//                    String minhasql = "insert into usuario (id_usuario, nome_usuario, email, senha, acesso) values ('"
-//                            + codigo + "','" + nome + "','" + email + "','" + senha + "','" + acesso + "')";
-//                    st.executeUpdate(minhasql);
-//                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
-//                } else {
-//                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
-//                }
-//
-//            } else {
-//                JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
-//            }
-//
-//        } catch (Exception e) {
-//            JOptionPane.showMessageDialog(null, "Não gravado!");
-//        }
-
     }//GEN-LAST:event_botaoAdicionarVendedorActionPerformed
 
     private void textoFiltrarNomeClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textoFiltrarNomeClienteActionPerformed
@@ -4075,10 +4029,8 @@ public class Venda extends javax.swing.JFrame {
 
     private void incluirUsuario() {
 
-        String codigo, nome, email, senha, confirmarSenha;
+        String nome, email, senha, confirmarSenha;
 
-//        codigo = textoCodigoVendedor.getText();
-//        int codigoInt = Integer.parseInt(codigo);
         nome = textoNomeVendedor.getText();
         email = textoEmailVendedor.getText();
         senha = textoSenhaVendedor.getText();
