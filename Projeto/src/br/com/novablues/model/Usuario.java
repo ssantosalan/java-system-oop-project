@@ -1,7 +1,7 @@
 
 package br.com.novablues.model;
 
-public class Usuario {
+public class Usuario extends Pessoa {
 
     private String id_usuario;
     private String nome_usuario;
