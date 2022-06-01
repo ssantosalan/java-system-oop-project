@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package br.com.novablues.controller;
 
 import br.com.novablues.DAO.EstoqueDAO;
@@ -9,10 +6,7 @@ import br.com.novablues.DAO.UsuarioDAO;
 import br.com.novablues.model.Estoque;
 import java.util.ArrayList;
 
-/**
- *
- * @author Gui
- */
+
 public class ControllerProdutos {
     
 

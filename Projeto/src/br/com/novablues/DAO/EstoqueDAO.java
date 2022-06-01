@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package br.com.novablues.DAO;
 
 import br.com.novablues.connection.ConnectionFactory;
@@ -13,10 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Gui
- */
 public class EstoqueDAO {
 
     public void cadastrarProduto(Estoque produto) {
