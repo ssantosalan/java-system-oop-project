@@ -3,7 +3,7 @@ package br.com.novablues.model;
 
 public class Usuario {
 
-    private int id_usuario;
+    private String id_usuario;
     private String nome_usuario;
     private String email;
     private String senha;
@@ -19,12 +19,17 @@ public class Usuario {
         this.senha = senha;
         this.acesso = acesso;
     }
+    
+    public Usuario(String id_usuario, String nome_usuario) {
+        this.id_usuario = id_usuario;
+        this.nome_usuario = nome_usuario;
+    }
 
-    public int getId_usuario() {
+    public String getId_usuario() {
         return id_usuario;
     }
 
-    public void setId_usuario(int id_usuario) {
+    public void setId_usuario(String id_usuario) {
         this.id_usuario = id_usuario;
     }
 

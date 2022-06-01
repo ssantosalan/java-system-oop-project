@@ -12,4 +12,17 @@ public class ControllerUsuario {
         this.UsuarioDAO.cadastrarUsuario(usuario);
     }
     
+    public void excluirUsuarioController(Usuario usuario) {
+        this.UsuarioDAO.excluirUsuario(usuario);
+    }
+    
+    public boolean procurarUsuarioPorNomeOuId(String nome, String id) {
+        if(this.UsuarioDAO.procurarUsuarioPorNomeOuId(nome, id)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    
 }

@@ -19,7 +19,7 @@ public class TesteDeUsuario {
 //        usuario.setEmail("joao-andrade@novablues.com.br");
 //        usuario.setSenha("teste");
 //        usuario.setAcesso("Colaborador");
-        usuario.setId_usuario(5);
+//        usuario.setId_usuario(5);
         
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         
