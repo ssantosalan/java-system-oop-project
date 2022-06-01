@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 
 public class UsuarioDAO {
 
-    public void cadastrarUser(Usuario usuario) {
+    public void cadastrarUsuario(Usuario usuario) {
         String sql = "INSERT INTO usuario(nome_usuario, email, senha, acesso) VALUES (?, ?, ?, ?)";
         Connection conn = null;
 
@@ -24,7 +24,7 @@ public class UsuarioDAO {
             pstm.setString(4, usuario.getAcesso());
 
             pstm.execute();
-            System.out.println("Usuario cadastrado com sucesso!");
+            System.out.println("Usuário cadastrado com sucesso!");
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -43,7 +43,7 @@ public class UsuarioDAO {
         }
     }
 
-    public void excluirUser(Usuario usuario) {
+    public void excluirUsuario(Usuario usuario) {
         String sql = "DELETE FROM usuario WHERE id_usuario = ?";
         Connection conn = null;
         PreparedStatement pstm = null;

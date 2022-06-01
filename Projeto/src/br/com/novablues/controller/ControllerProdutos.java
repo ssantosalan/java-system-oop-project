@@ -8,10 +8,7 @@ import java.util.ArrayList;
 
 
 public class ControllerProdutos {
-    
-
     //Controllers de produto
-    
     private EstoqueDAO estoqueDAO = new EstoqueDAO();
     
     public ArrayList<Estoque> retornaProdutosBuscadosController (String name){

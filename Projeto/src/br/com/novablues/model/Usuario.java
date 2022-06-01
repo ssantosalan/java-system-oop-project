@@ -13,8 +13,7 @@ public class Usuario {
 
     }
 
-    public Usuario(int id_usuario, String nome_usuario, String email, String senha, String acesso) {
-        this.id_usuario = id_usuario;
+    public Usuario(String nome_usuario, String email, String senha, String acesso) {
         this.nome_usuario = nome_usuario;
         this.email = email;
         this.senha = senha;

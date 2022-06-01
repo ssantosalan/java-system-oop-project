@@ -25,6 +25,6 @@ public class TesteDeUsuario {
         
         //usuarioDAO.cadastrarUser(usuario);
         
-        usuarioDAO.excluirUser(usuario);
+        usuarioDAO.excluirUsuario(usuario);
     }
 }

@@ -7,7 +7,9 @@ package br.com.novablues.view;
 
 import br.com.novablues.connection.ConnectionFactory;
 import br.com.novablues.controller.ControllerProdutos;
+import br.com.novablues.controller.ControllerUsuario;
 import br.com.novablues.model.Estoque;
+import br.com.novablues.model.Usuario;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -28,9 +30,13 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Venda extends javax.swing.JFrame {
 
+    //Produto
     ConnectionFactory conn = new ConnectionFactory();
     ArrayList<Estoque> listarProdutos = new ArrayList<>();
     ControllerProdutos controllerProdutos = new ControllerProdutos();
+
+    //Usuario
+    ControllerUsuario controllerUsuario = new ControllerUsuario();
 
     int linha = 0;
 
@@ -168,8 +174,6 @@ public class Venda extends javax.swing.JFrame {
         jLabel82 = new javax.swing.JLabel();
         textoNomeVendedor = new javax.swing.JTextField();
         jLabel83 = new javax.swing.JLabel();
-        jLabel84 = new javax.swing.JLabel();
-        textoCodigoVendedor = new javax.swing.JTextField();
         botaoAdicionarVendedor = new javax.swing.JButton();
         jLabel86 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
@@ -1348,11 +1352,6 @@ public class Venda extends javax.swing.JFrame {
         jLabel83.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
         jLabel83.setText("Nome");
 
-        jLabel84.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
-        jLabel84.setText("Código");
-
-        textoCodigoVendedor.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-
         botaoAdicionarVendedor.setFont(new java.awt.Font("Tw Cen MT", 1, 14)); // NOI18N
         botaoAdicionarVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/add-round.png"))); // NOI18N
         botaoAdicionarVendedor.setText("Incluir Vendedor");
@@ -1437,7 +1436,7 @@ public class Venda extends javax.swing.JFrame {
         jPanel27Layout.setHorizontalGroup(
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel27Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addGap(36, 36, 36)
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel27Layout.createSequentialGroup()
@@ -1450,12 +1449,11 @@ public class Venda extends javax.swing.JFrame {
                                     .addComponent(jLabel82)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(jLabel88))
-                                .addComponent(jLabel84)
                                 .addGroup(jPanel27Layout.createSequentialGroup()
                                     .addComponent(jLabel81)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(jLabel89)))
-                            .addGap(49, 49, 49))
+                            .addGap(72, 72, 72))
                         .addGroup(jPanel27Layout.createSequentialGroup()
                             .addComponent(jLabel87)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1463,11 +1461,10 @@ public class Venda extends javax.swing.JFrame {
                     .addGroup(jPanel27Layout.createSequentialGroup()
                         .addComponent(jLabel28)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel91)))
-                .addGap(23, 23, 23)
+                        .addComponent(jLabel91)
+                        .addGap(23, 23, 23)))
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(textoConfirmarSenhaVendedor)
-                    .addComponent(textoCodigoVendedor)
                     .addComponent(textoNomeVendedor)
                     .addComponent(textoEmailVendedor, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel27Layout.createSequentialGroup()
@@ -1475,17 +1472,13 @@ public class Venda extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(botaoAcessoColaboradorVendedor))
                     .addComponent(botaoAdicionarVendedor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(textoSenhaVendedor))
-                .addContainerGap(73, Short.MAX_VALUE))
+                    .addComponent(textoSenhaVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
         jPanel27Layout.setVerticalGroup(
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel27Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textoCodigoVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel84))
-                .addGap(12, 12, 12)
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textoNomeVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel83)
@@ -1514,7 +1507,7 @@ public class Venda extends javax.swing.JFrame {
                     .addComponent(jLabel90))
                 .addGap(18, 18, 18)
                 .addComponent(botaoAdicionarVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
 
         jLabel94.setBackground(new java.awt.Color(204, 204, 0));
@@ -2849,50 +2842,52 @@ public class Venda extends javax.swing.JFrame {
 
     private void botaoAdicionarVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAdicionarVendedorActionPerformed
         // TODO add your handling code here:
-        String codigo, nome, email, senha, confirmarSenha;
+        incluirUsuario();
 
-        codigo = textoCodigoVendedor.getText();
-        nome = textoNomeVendedor.getText();
-        email = textoEmailVendedor.getText();
-        senha = textoSenhaVendedor.getText();
-        confirmarSenha = textoConfirmarSenhaVendedor.getText();
-
-        String acesso = "";
-        if (botaoAcessoGerenteVendedor.isSelected()) {
-            acesso = "Gerente";
-        } else if (botaoAcessoColaboradorVendedor.isSelected()) {
-            acesso = "Colaborador";
-        }
-
-        try {
-
-            if (codigo.equals("") && !nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
-                if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
-                    String minhasql = "insert into usuario (nome_usuario, email, senha, acesso) values ('"
-                            + nome + "','" + email + "','" + senha + "','" + acesso + "');";
-                    st.executeUpdate(minhasql);
-                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
-                } else {
-                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
-                }
-
-            } else if (!codigo.equals("") && !nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
-                if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
-                    String minhasql = "insert into usuario (id_usuario, nome_usuario, email, senha, acesso) values ('"
-                            + codigo + "','" + nome + "','" + email + "','" + senha + "','" + acesso + "')";
-                    st.executeUpdate(minhasql);
-                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
-                } else {
-                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
-                }
-
-            } else {
-                JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
-            }
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Não gravado!");
-        }
+//        String codigo, nome, email, senha, confirmarSenha;
+//
+//        codigo = textoCodigoVendedor.getText();
+//        nome = textoNomeVendedor.getText();
+//        email = textoEmailVendedor.getText();
+//        senha = textoSenhaVendedor.getText();
+//        confirmarSenha = textoConfirmarSenhaVendedor.getText();
+//
+//        String acesso = "";
+//        if (botaoAcessoGerenteVendedor.isSelected()) {
+//            acesso = "Gerente";
+//        } else if (botaoAcessoColaboradorVendedor.isSelected()) {
+//            acesso = "Colaborador";
+//        }
+//
+//        try {
+//
+//            if (codigo.equals("") && !nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
+//                if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
+//                    String minhasql = "insert into usuario (nome_usuario, email, senha, acesso) values ('"
+//                            + nome + "','" + email + "','" + senha + "','" + acesso + "');";
+//                    st.executeUpdate(minhasql);
+//                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
+//                } else {
+//                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
+//                }
+//
+//            } else if (!codigo.equals("") && !nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
+//                if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
+//                    String minhasql = "insert into usuario (id_usuario, nome_usuario, email, senha, acesso) values ('"
+//                            + codigo + "','" + nome + "','" + email + "','" + senha + "','" + acesso + "')";
+//                    st.executeUpdate(minhasql);
+//                    JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
+//                } else {
+//                    JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
+//                }
+//
+//            } else {
+//                JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
+//            }
+//
+//        } catch (Exception e) {
+//            JOptionPane.showMessageDialog(null, "Não gravado!");
+//        }
 
     }//GEN-LAST:event_botaoAdicionarVendedorActionPerformed
 
@@ -3763,7 +3758,7 @@ public class Venda extends javax.swing.JFrame {
         nomeCli = jnomeCliente.getText();
         dataI = jdataInicial.getDateFormatString();
         dataF = jdataFinal.getDateFormatString();
- 
+
         String minhasql;
 
         try {
@@ -3778,13 +3773,12 @@ public class Venda extends javax.swing.JFrame {
                 linha++;
             } while (linha < 40);
             linha = 0;
-            
-            
-            if (!jnumeroPedido.getText().equals("") ){                
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n" +
-                "inner join estoque as E\n" +
-                "inner join cliente as C\n" +
-                "where PV.numero_pedido = '"+numeroPedido+"' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+
+            if (!jnumeroPedido.getText().equals("")) {
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n"
+                        + "inner join estoque as E\n"
+                        + "inner join cliente as C\n"
+                        + "where PV.numero_pedido = '" + numeroPedido + "' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
                 resultado = st.executeQuery(minhasql);
 
                 while (resultado.next()) {
@@ -3798,18 +3792,18 @@ public class Venda extends javax.swing.JFrame {
                 }
 
             } else if (!jnomeCliente.getText().equals("") && !dataI.equals("") && !dataF.equals("")) {
-                 SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
-                 String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
-                 String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
-                 
-                minhasql ="select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n" +
-                "cliente as C inner join \n" +
-                "estoque as E\n" +
-                "where C.nome like '"+nomeCli+"%' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto && data_venda between '"+dataFormatadaInicio+"' and '"+dataFormatadaFinal+"';"; 
-                             
+                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
+                String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
+                String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
+
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n"
+                        + "cliente as C inner join \n"
+                        + "estoque as E\n"
+                        + "where C.nome like '" + nomeCli + "%' && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto && data_venda between '" + dataFormatadaInicio + "' and '" + dataFormatadaFinal + "';";
+
                 resultado = st.executeQuery(minhasql);
 
-                while (resultado.next()){
+                while (resultado.next()) {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
@@ -3818,16 +3812,16 @@ public class Venda extends javax.swing.JFrame {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
                     linha++;
                 }
-                
+
             } else if (!jnomeCliente.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "ENTROU!");
-                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n" +
-                "cliente as C inner join \n" +
-                "estoque as E\n" +
-                "where C.nome like '"+nomeCli+"%'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV inner join \n"
+                        + "cliente as C inner join \n"
+                        + "estoque as E\n"
+                        + "where C.nome like '" + nomeCli + "%'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
                 resultado = st.executeQuery(minhasql);
-                 
-                while (resultado.next()){
+
+                while (resultado.next()) {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
@@ -3836,32 +3830,32 @@ public class Venda extends javax.swing.JFrame {
                     tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
                     linha++;
                 }
-       
+
             } else if (!dataI.equals("") && !dataF.equals("")) {
 
-                    SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
-                    String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
-                    String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
+                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd");
+                String dataFormatadaInicio = simpleDate.format(jdataInicial.getDate());
+                String dataFormatadaFinal = simpleDate.format(jdataFinal.getDate());
 
-                    minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n" +
-                    "inner join estoque as E\n" +
-                    "inner join cliente as C \n" +
-                    "WHERE data_venda between '"+dataFormatadaInicio+"' and '"+dataFormatadaFinal+"'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
-                    resultado = st.executeQuery(minhasql);
+                minhasql = "select  PV.numero_pedido, E.nome_produto, Pv.quantidade_comprada, (E.valor_unit * Pv.quantidade_comprada) as valor_total, C.nome as cliente, Pv.data_venda from pedido_de_venda as PV\n"
+                        + "inner join estoque as E\n"
+                        + "inner join cliente as C \n"
+                        + "WHERE data_venda between '" + dataFormatadaInicio + "' and '" + dataFormatadaFinal + "'  && PV.nome_cliente = C.nome && E.id_produto = PV.FK_id_produto;";
+                resultado = st.executeQuery(minhasql);
 
-                    while (resultado.next()){
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
-                        tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
-                        linha++;
-                    }
+                while (resultado.next()) {
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("PV.numero_pedido"), linha, 0);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("E.nome_produto"), linha, 1);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.quantidade_comprada"), linha, 2);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("valor_total"), linha, 3);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("cliente"), linha, 4);
+                    tabelaRelatorioAnalitico.setValueAt(resultado.getString("Pv.data_venda"), linha, 5);
+                    linha++;
                 }
+            }
 
         } catch (Exception e) {
-           
+
         }
 
     }//GEN-LAST:event_botaoGerarRelatorioActionPerformed
@@ -4079,6 +4073,39 @@ public class Venda extends javax.swing.JFrame {
 
     }
 
+    private void incluirUsuario() {
+
+        String codigo, nome, email, senha, confirmarSenha;
+
+//        codigo = textoCodigoVendedor.getText();
+//        int codigoInt = Integer.parseInt(codigo);
+        nome = textoNomeVendedor.getText();
+        email = textoEmailVendedor.getText();
+        senha = textoSenhaVendedor.getText();
+        confirmarSenha = textoConfirmarSenhaVendedor.getText();
+
+        String acesso = "";
+        if (botaoAcessoGerenteVendedor.isSelected()) {
+            acesso = "Gerente";
+        } else if (botaoAcessoColaboradorVendedor.isSelected()) {
+            acesso = "Colaborador";
+        }
+
+        Usuario usuario = new Usuario(nome, email, senha, acesso);
+
+        if (!nome.equals("") && !email.equals("") && !senha.equals("") && !confirmarSenha.equals("")) {
+            if (senha.equals(confirmarSenha) && confirmarSenha.equals(senha)) {
+                controllerUsuario.cadastroUsuarioController(usuario);
+                JOptionPane.showMessageDialog(null, "Registro do usuário gravado!");
+            } else {
+                JOptionPane.showMessageDialog(null, "Senhas incompatíveis!");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Espaço obrigatório em branco!");
+        }
+
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton RBA;
     private javax.swing.JRadioButton RBD;
@@ -4188,7 +4215,6 @@ public class Venda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
@@ -4260,7 +4286,6 @@ public class Venda extends javax.swing.JFrame {
     private javax.swing.JTextField textoCPFVenda;
     private javax.swing.JTextField textoCodigoCliente;
     private javax.swing.JTextField textoCodigoProduto;
-    private javax.swing.JTextField textoCodigoVendedor;
     private javax.swing.JPasswordField textoConfirmarSenhaVendedor;
     private javax.swing.JTextField textoDescricaoProduto;
     private javax.swing.JTextField textoDescricaoProdutoCaixa;
