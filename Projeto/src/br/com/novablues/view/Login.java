@@ -2,6 +2,7 @@
 package br.com.novablues.view;
 
 import java.awt.Color;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -12,6 +13,7 @@ import javax.swing.JOptionPane;
 
 public class Login extends javax.swing.JFrame {
 
+    
     /**
      * Creates new form Login
      */
@@ -70,7 +72,7 @@ public class Login extends javax.swing.JFrame {
 
     public Login() {
         initComponents();
-        
+        setIcon();
         this.setLocationRelativeTo(null);
         try {
             conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "102030");
@@ -79,6 +81,9 @@ public class Login extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Não Conectado!");
         }
+    }
+    private void setIcon(){
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/imagens/nb.png")));
     }
 
     /**
