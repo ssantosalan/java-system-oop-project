@@ -73,7 +73,7 @@ public class Login extends javax.swing.JFrame {
         
         this.setLocationRelativeTo(null);
         try {
-            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "admin");
+            conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "102030");
             st = (Statement) conexao.createStatement();
             JOptionPane.showMessageDialog(null, "Conectado!");
         } catch (Exception e) {
