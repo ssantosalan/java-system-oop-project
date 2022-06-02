@@ -11,6 +11,7 @@ import br.com.novablues.controller.ControllerUsuario;
 import br.com.novablues.model.Estoque;
 import br.com.novablues.model.Usuario;
 import java.awt.Color;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -54,6 +55,7 @@ public class Venda extends javax.swing.JFrame {
 
     public Venda() {
         initComponents();
+        setIcon();
         this.setLocationRelativeTo(null);
         try {
             conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/projetointegrador_terceiro", "root", "admin");
@@ -66,6 +68,10 @@ public class Venda extends javax.swing.JFrame {
 
         }
 
+    }
+    
+    private void setIcon(){
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/imagens/nb.png")));
     }
 
     /**
